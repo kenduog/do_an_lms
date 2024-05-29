@@ -1,0 +1,2 @@
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:ExecuteReader: CommandText property has not been initialized    15/01/2024 11:33
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:Value cannot be null. (Parameter 'source')    15/01/2024 11:34

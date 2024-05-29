@@ -1,0 +1,6 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Could not find stored procedure 'Get_CollectionPlan'.    23/01/2024 15:59
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_fee    23/01/2024 16:09
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_collectionPlan    23/01/2024 16:10
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_fee    23/01/2024 16:10
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_student    23/01/2024 16:12
+HTTPCode: 500    MessageError: userName: dev ** Erro:Could not find stored procedure 'Get_CollectionSession'.    23/01/2024 16:19

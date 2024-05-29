@@ -1,0 +1,1 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Could not find a part of the path 'C:\Users\tcmin\source\repos\NextGen\API\Download\Export\31e3df54-4aeb-44eb-9f14-a6eb0b00287e.xlsx'.    23/05/2024 15:31

@@ -1,0 +1,20 @@
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 11:51
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 11:52
+HTTPCode: 400    MessageError: userName: dev ** Erro:Không tìm thấy giảm giá    11/05/2024 11:53
+HTTPCode: 500    MessageError: userName: dev ** Erro:Nullable object must have a value.    11/05/2024 12:02
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 12:11
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 12:11
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:12
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:14
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:15
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:16
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:19
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:23
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 12:31
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 12:31
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    11/05/2024 12:31
+HTTPCode: 500    MessageError: userName: dev ** Erro:Object reference not set to an instance of an object.    11/05/2024 14:06
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 14:32
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 14:33
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    11/05/2024 14:33
+HTTPCode: 400    MessageError: userName: dev ** Erro:Học viên đã thanh toán hết    11/05/2024 14:33

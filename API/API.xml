@@ -1,0 +1,1145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.AddressController.GetCities(Entities.DomainEntities.BaseSearch)">
+            <summary>
+            Lấy danh sách tỉnh/thành phố
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetDistricts(Entities.Search.DistrictsSearch)">
+            <summary>
+            Lấy danh sách quận/huyện
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetWards(Entities.Search.WardsSearch)">
+            <summary>
+            Lấy danh sách phường/xã
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ArrangeClassController.GetClasses(Request.RequestCreate.ClassCreate)">
+            <summary>
+            Tạo lớp mới
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.ArrangeClassController.GetClasses(Entities.Search.ClassSearch)">
+            <summary>
+            Lấy danh sách lớp (có filter)
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ArrangeClassController.GetStudents(Entities.Search.ArrangeNewClassSearch)">
+            <summary>
+            Lấy danh sách học sinh 
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AttendanceController.Get(Entities.Search.AttendanceSearch)">
+            <summary>
+            Lấy danh sách item không có phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AttendanceController.UpdateRangeItem(Request.RequestUpdate.AttendanceRangeUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BillController.AddStudent(Request.RequestCreate.StudentCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.AddItem(Request.RequestCreate.ClassCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.UpdateItem(Request.RequestUpdate.ClassUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.Get(Entities.Search.ClassSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.GetClassEmpty(Entities.Search.ClassSearch)">
+            <summary>
+            Lấy danh sách lớp còn trống
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ClassController.PrepareToCreateTimeTable(Entities.Search.ClassPrepare)">
+            <summary>
+            Lấy danh sách lớp cho thời khóa biểu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.TotalIncome(Entities.Search.CollectionPlanReport)">
+            <summary>
+            Tổng thu nhập 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.AvgMoneyPerStudent(Entities.Search.AverageMoneyPerStudent)">
+            <summary>
+            Trung bình tiền thu mỗi học sinh
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.CollectionSessionReport(Entities.Search.CollectionSessionReport)">
+            <summary>
+            Thống kê theo mỗi đợt thu của 1 kế hoạch thu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.ReportByFee(Entities.Search.ReportByFee)">
+            <summary>
+            Thống kê theo các khoảng thu 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.CollectionSessionDebt(Entities.Search.CollectionSessionDebtSearch)">
+            <summary>
+            Danh sách các đợt thu còn nợ
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.CollectionPlanController.UpdateStatus(Request.RequestUpdate.CollectionPlanUpdateStatus)">
+            <summary>
+            Cập nhật trạng thái đợt thu
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.CustomAddItem(Request.RequestCreate.CollectionSessionCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.UpdateCollectionByStudent(Request.RequestUpdate.CollectionSessionLineUpdate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.UpdateDeduction(Request.RequestUpdate.CollectionSessionHeaderUpdate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.CustomGetByIdAsync(Entities.Search.CollectionSessionByIdSearch)">
+            <summary>
+            Lấy chi tiết đợt thu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.GetByParent(Entities.Search.CollectionSessionByParentSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.GetCollectionHeaderByParent(System.Guid)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CollectionSessionController.ConfirmPayment(Request.RequestUpdate.ComfirmPayment)">
+            <summary>
+            Confirm thanh toán
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CommentController.GetOrGenerateComment(Entities.Search.CommentSearch)">
+            <summary>
+            Lấy danh sách item 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CommentController.UpdateComment(System.Collections.Generic.List{Request.RequestUpdate.CommentUpdate})">
+            <summary>
+            Cập nhật nhận xét hàng ngày 
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CommentInNewsController.AddItem(Request.RequestCreate.CommentInNewsCreate)">
+            <summary>
+            Thêm bình luận
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CommentInNewsController.UpdateItem(Request.RequestUpdate.CommentInNewsUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.CommentInNewsController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.Get(Entities.Search.ContentTypeSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.GetAllByGroup(System.Guid)">
+            <summary>
+            Lấy danh sách toàn bộ menu theo group
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.GetAllMenu">
+            <summary>
+            Lấy danh sách tất cả menu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.AddItem(Request.RequestCreate.ContentTypeCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.GetActions">
+            <summary>
+            Lấy danh sách controller-action
+            </summary>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.ContentTypeController.GetEntities">
+            <summary>
+            Lấy danh sách entitiy
+            </summary>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.DeliveryOrderHeaderController.UpdateStatus(Request.RequestUpdate.DeliveryOrderHeaderStatusUpdate)">
+            <summary>
+            Cập nhật trạng thái phiếu nhập kho
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.DepartmentController.UpdateItem(Request.RequestUpdate.DepartmentUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.DocumentNewsController.UploadSingle(Request.RequestCreate.DocumentNewsCreate)">
+            <summary>
+            Tải lên
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.DropdownController.FilterOption">
+            <summary>
+            Lấy filter
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.FeedbackController.Get(Entities.Search.FeedbackSearch)">
+            <summary>
+            Lấy danh sách item phân trang chia tab theo status
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.FeedbackController.DoneFeedback(System.Guid)">
+            <summary>
+            Cập nhật trạng thái đã xong
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.FeedbackReplyController.VoteFeedback(Request.RequestCreate.FeedbackVote)">
+            <summary>
+            Đánh giá kết quả phản hồi
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.FoodItemController.GetFoodItemMenu(Entities.Search.FoodItemMenuRequest)">
+            <summary>
+            Lấy danh sách thành phần của những món ăn 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GoodBehaviorCertificateController.GetOrGenerateGoodBehaviorCertificate(Entities.Search.GoodBehaviorCertificateSearch)">
+            <summary>
+            Lấy danh sách item 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GoodBehaviorCertificateController.UpdateGoodBehaviorCertificate(System.Collections.Generic.List{Request.RequestUpdate.GoodBehaviorCertificateUpdate})">
+            <summary>
+            Cập nhật phiếu bé ngoan
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupController.AddItem(Request.RequestCreate.GroupCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupController.UpdateItem(Request.RequestUpdate.GroupUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupController.GetController(System.String)">
+            <summary>
+            Lấy danh sách màn hình
+            </summary>
+            <param name="groupCode"></param>
+            <returns></returns>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:API.Controllers.GroupController.GetAction(API.Controllers.GroupController.GetControllerActionByDevWithGroupCode)">
+            <summary>
+            Lấy danh sách chức năng
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.AddItem(Request.RequestCreate.GroupNewsCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.GetUserGroupNews(Entities.Search.UserJoinGroupNewsSearch)">
+            <summary>
+            Lấy danh sách người dùng trong nhóm/ngoài nhóm 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.GrantPermissions(Request.RequestCreate.GrantPermissionsGroupNewsCreate)">
+            <summary>
+            Cấp quyền quản trị viên cho thành viên trong nhóm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.ChangeOwner(Request.RequestCreate.ChangeOwnerGroupNewsCreate)">
+            <summary>
+            Chuyển chủ nhóm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.RevokePermissions(Request.RequestCreate.ChangeOwnerGroupNewsCreate)">
+            <summary>
+            Hủy cấp quyền
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.GroupNewsController.CheckAdmin(Request.RequestCreate.CheckAdminGroupNewsCreate)">
+            <summary>
+            Kiểm tra admin trong nhóm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ItemInventoryController.GetItemInventory(Entities.Search.ItemInventorySearch)">
+            <summary>
+            Danh sách thẻ kho theo sản phẩm
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API.Controllers.LikeInNewsController.AddItem(Request.RequestCreate.LikeInNewsCreate)" -->
+        <member name="M:API.Controllers.MenuController.GetMenuWithFoods(Entities.Search.MenuSearch)">
+            <summary>
+            Lấy danh sách menu có phân trang và danh sách foods 
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.MenuWeekController.Get(Entities.Search.MenuWeekSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.MenuWeekController.AddOrUpdateItem(Request.RequestUpdate.MenuWeekUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.MenuWeekController.GetRandomMenuWeek(Entities.Search.MenuWeekRandomSearch)">
+            <summary>
+            Lấy danh sách thực đơn tuần ngẫu nhiên
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NecessaryController.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Upload Multiple File
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NewsController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NewsController.AddItem(Request.RequestCreate.NewsCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NewsController.UpdateItem(Request.RequestUpdate.NewsUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NewsController.GetFileExtensionFromUrl(System.String)">
+            <summary>
+            Số lượt like và bình luận
+            </summary>
+            <param name="newsid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.AddItem(Request.RequestCreate.NotificationCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.Get(Entities.Search.NotificationSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API.Controllers.NotificationController.GetAll(Entities.Search.NotificationSearch)" -->
+        <member name="M:API.Controllers.NotificationController.UpdateItem(Request.RequestCreate.NotificationUpdate)">
+            <summary>
+            Xem tin nhắn
+            </summary>
+            <param name="itemModel">Id của Noti hoặc User tùy vào Type, Type : 1 Noti; 2 User</param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.GetNotificationList(Entities.Search.NotificationSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.UpdateIsSeen(Request.RequestCreate.NotificationUpdate)">
+            <summary>
+            Xem tin nhắn
+            </summary>
+            <param name="itemModel">Id của Noti hoặc User tùy vào Type, Type : 1 Noti; 2 User</param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ParentController.AddItem(Request.RequestCreate.ParentCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ParentController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ParentController.Get(Entities.Search.ParentSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.PaymentSessionController.AddItem(Request.RequestCreate.PaymentSessionCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.PaymentSessionController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ProfileTemplateController.AddItem(Request.RequestCreate.ProfileTemplateCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ProfileTemplateController.ChangeIndex(Request.RequestUpdate.ChangeIndexModel)">
+            <summary>
+            Sắp xếp
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.PurchaseOrderHeaderController.ChangeStatus(Request.RequestUpdate.ChangeStatusPurchase)">
+            <summary>
+            Đổi trạng thái
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ReceiveOrderHeaderController.UpdateStatus(Request.RequestUpdate.ReceiveOrderHeaderStatusUpdate)">
+            <summary>
+            Cập nhật trạng thái phiếu xuất kho
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ReportTemplateController.GetByCode(System.String)">
+            <summary>
+            Lấy thông tin theo code
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScaleMeasureDetailController.Export(System.Guid)">
+            <summary>
+            Export
+            </summary>
+            <param name="scaleMeasureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScaleMeasureDetailController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Import
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScaleMeasureDetailController.ExportTemplateWithScaleMeasureDetail(Entities.Search.ScaleMeasureDetailExportSearch)">
+            <summary>
+            Export Template
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScaleMeasureDetailController.ExportWithScaleMeasureDetail(Entities.Search.ScaleMeasureDetailExportSearch)">
+            <summary>
+            Export
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScaleMeasureDetailController.SaveList(System.Collections.Generic.List{Entities.ScaleMeasureDetailExport},System.Guid)">
+            <summary>
+            Save List
+            </summary>
+            <param name="scaleMeasureId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Get(Entities.Search.ScheduleSearch)">
+            <summary>
+            Lấy danh sách item không có phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.SemesterController.AddItem(Request.RequestCreate.SemesterCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.SemesterController.GetSemesterByDate(Entities.Search.SemesterByDateSearch)">
+            <summary>
+            Lấy thông tin học kỳ
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StaffController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StaffController.AddItem(Request.RequestCreate.StaffCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StaffController.UpdateItem(Request.RequestUpdate.StaffUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StaffController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StaffController.Get(Entities.Search.StaffSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StatisticalController.FinanceOverview(Entities.Search.StatisticalSearch)">
+            <summary>
+            Báo cáo số liệu tổng quan
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StatisticalController.Revenue12Month(Entities.Search.StatisticalSearch)">
+            <summary>
+            Báo cáo doanh thu 12 tháng
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StatisticalController.RateTutionConfig(Entities.Search.StatisticalSearch)">
+            <summary>
+            Tỷ lệ khoản thu
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StatisticalController.ReportBillInDebt(Entities.Search.StatisticalSearch)">
+            <summary>
+            Học viên còn nợ
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.AvailableStudent(Entities.Search.AvailableStudentRequest)">
+            <summary>
+            Lấy danh sách học viên có thể xếp lớp = học viên đã tốt nghiệp khối - 1 của năm học trước + những học viên mới
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.GetProfile(System.Guid)">
+            <summary>
+            Lấy danh sách tiêu chí hồ sơ
+            </summary>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.UpdateProfile(Request.RequestUpdate.ProfileUpdates)">
+            <summary>
+            Cập nhật thông tin hồ sơ học viên
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.AddItem(Request.RequestCreate.StudentCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.GetByParent">
+            <summary>
+            Lấy danh sách trẻ theo phụ huynh
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.GetProfileForMobile">
+            <summary>
+            Thông tin hồ sơ trẻ cho app
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.SchoolReportCard(System.Guid)">
+            <summary>
+            Sổ liên lạc điện tử
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentController.AddListItem(System.Collections.Generic.List{Request.RequestCreate.StudentCreate})">
+            <summary>
+            Thêm mới nhieu hoc vien
+            </summary>
+            <param name="List itemModelitemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentInAssessmentController.GetStudentInClassForAssessment(Entities.Search.StudentInClassForAssessmentSearch)">
+            <summary>
+            Danh sách học giá đánh giá theo chủ đề 
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API.Controllers.StudentInAssessmentController.CreateOrUpdateAssessment(Request.RequestCreate.StudentInAssessmentCreate)" -->
+        <member name="M:API.Controllers.StudentInClassController.AddItem(Request.RequestCreate.StudentInClassCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudentLeaveRequestController.AddRange(Request.RequestCreate.MultipleStudentLeaveRequest)">
+            <summary>
+            Thêm nhiều đơn xin vắng
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.StudyShiftController.AddItem(Request.RequestCreate.StudyShiftCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.SubjectController.PrepareToCreateTimeTable(Entities.Search.SubjectPrepareSearch)">
+            <summary>
+            Lấy danh sách môn học theo lớp cho thời khóa biểu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.SubjectInGradeController.AddItem(Request.RequestCreate.SubjectInGradeCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.SubjectInGradeController.Get(Entities.Search.SubjectInGradeSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TeachingAssignmentController.AddItem(Request.RequestCreate.TeachingAssignmentCreate)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TeachingAssignmentController.Get(Entities.Search.TeachingAssignmentSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TeachingAssignmentController.PrepareToCreateTimeTable(Entities.Search.TeacherBySubjectRequest)">
+            <summary>
+            Get teachers by subject
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TeachingFrameController.GetByGrade(Entities.Search.TeachingFrameGroupByGradeSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TimeTableController.AddItem(Request.RequestCreate.TimeTableCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TimeTableController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin chi tiết tkb
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TimeTableController.Get(Entities.Search.TimeTableSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TranscriptController.GetAll(Entities.Search.TranscriptSearch)">
+            <summary>
+            Lấy danh sách item không có phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.AddItem(Request.RequestCreate.UserCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.UpdateItem(Request.RequestUpdate.UserUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.Get(Entities.DomainEntities.BaseSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.UpdateOneSignalId(Request.RequestUpdate.OneSignalUpdate)">
+            <summary>
+            Cập nhật onesignal player id
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.AddAdmin(Request.RequestCreate.AdminCreate)">
+            <summary>
+            Thêm mới tài khoản admin, chỉ dev dùng
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserController.UpdateAdmin(Request.RequestUpdate.AdminUpdate)">
+            <summary>
+            Cập nhật thông tin quản trị viên
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserGroupController.AddItem(Request.RequestCreate.UserGroupCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserGroupController.UpdateItem(Request.RequestUpdate.UserGroupUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserGroupController.DeleteItem(Request.RequestUpdate.UserGroupDelete)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserJoinGroupNewsController.JoinGroupNews(Request.RequestCreate.UserJoinGroupNewsCreate)">
+            <summary>
+            Tham gia
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserJoinGroupNewsController.OutGroupNews(Request.RequestCreate.UserJoinGroupNewsCreate)">
+            <summary>
+            Ra khỏi nhóm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserJoinGroupNewsController.JoinGroupMultipleNews(Request.RequestCreate.UserJoinGroupNewsMultipleCreate)">
+            <summary>
+            Nhiều người ra khỏi nhóm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.UserJoinGroupNewsController.OutGroupMultipleNews(Request.RequestCreate.UserJoinGroupNewsMultipleCreate)">
+            <summary>
+            Nhiều người tham gia
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ValueEntryController.GetValueEntry(Entities.Search.ValueEntrySearch)">
+            <summary>
+            Danh sách thẻ kho theo sản phẩm
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.WeekController.GenerateWeek(Request.RequestCreate.GenerateWeekCreate)">
+            <summary>
+            Generate Week 
+            </summary>
+            <param name="generate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.WeekController.GetWeekByDate(Entities.Search.WeekByDateSearch)">
+            <summary>
+            Lấy tuần học theo ngày
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.WeekController.GetListWeekPastToNow(Entities.Search.WeekByDateSearch)">
+            <summary>
+            Lấy danh sách tuần đã học
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.WeekController.AddItem(Request.RequestCreate.WeekCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.WeekController.UpdateItem(Request.RequestUpdate.WeekUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="P:API.Model.BillDetailDTO.tuitionConfigDetailId">
+            <summary>
+            Khoản thu
+            </summary>
+        </member>
+        <member name="P:API.Model.MemberGroupNewsDTO.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:API.Model.MemberGroupNewsDTO.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:API.Model.MemberGroupNewsDTO.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:API.Model.NewsDTO.title">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:API.Model.NewsDTO.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:API.Model.NewsDTO.branchIds">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:API.Model.NewsDTO.liked">
+            <summary>
+            Người dùng đã yêu thích
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.initialLevelName">
+            <summary>
+            Trình độ đầu vào
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.currentLevelName">
+            <summary>
+            Trình độ hiện tại
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.bookeds">
+            <summary>
+            Đã đặt
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.asSchedules">
+            <summary>
+            Hoàn thành
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.studentNoShows">
+            <summary>
+            Học viên không đến
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.teacherNoShows">
+            <summary>
+            Giáo viên không đến
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.itProblems">
+            <summary>
+            Lỗi hệ thống
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.teacherLates">
+            <summary>
+            Giáo viên đến trễ
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.teacherCancelations">
+            <summary>
+            Giáo viên hủy lịch
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.studentCancelations">
+            <summary>
+            Học viên hủy lịch
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.lessonAvailable">
+            <summary>
+            Tổng buổi học
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.startDate">
+            <summary>
+            Thời gian bắt đầu học
+            </summary>
+        </member>
+        <member name="P:API.Model.StudentScheduleOverview.endDate">
+            <summary>
+            Thời gian kết thúc học
+            </summary>
+        </member>
+        <member name="P:API.Model.TeacherAvailableWhenBooking.shifts">
+            <summary>
+            Ca học
+            </summary>
+        </member>
+        <member name="P:API.Model.ShiftAvailable.status">
+            <summary>
+            1 - Đang mở
+            2 - Đã đặt
+            </summary>
+        </member>
+    </members>
+</doc>

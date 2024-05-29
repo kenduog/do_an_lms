@@ -1,0 +1,19 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_GoodBehaviorCertificateNoPaging has too many arguments specified.    18/01/2024 01:01
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_GoodBehaviorCertificateNoPaging has too many arguments specified.    18/01/2024 01:01
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_GoodBehaviorCertificateNoPaging has too many arguments specified.    18/01/2024 01:01
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_GoodBehaviorCertificateNoPaging has too many arguments specified.    18/01/2024 01:02
+HTTPCode: 500    MessageError: userName: dev ** Erro:A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)    18/01/2024 11:28
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_food    18/01/2024 09:33
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Phiên đăng nhập hết hạn    18/01/2024 10:49
+HTTPCode: 400    MessageError: userName: Chưa login ** Erro:The value 'null' is not valid for refreshToken.    18/01/2024 10:49
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_week    18/01/2024 14:09
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_week    18/01/2024 14:10
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_week    18/01/2024 14:11
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    18/01/2024 14:13
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    18/01/2024 14:14
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    18/01/2024 14:15
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    18/01/2024 14:17
+HTTPCode: 500    MessageError: userName: dev ** Erro:An item with the same key has already been added. Key: 831568e2-71fb-4f34-800d-08dc17cebd62    18/01/2024 14:23
+HTTPCode: 500    MessageError: userName: dev ** Erro:An item with the same key has already been added. Key: 831568e2-71fb-4f34-800d-08dc17cebd62    18/01/2024 15:05
+HTTPCode: 500    MessageError: userName: dev ** Erro:An item with the same key has already been added. Key: 831568e2-71fb-4f34-800d-08dc17cebd62    18/01/2024 15:06
+HTTPCode: 400    MessageError: userName: dev ** Erro:require_at_least_2_menu    18/01/2024 15:13

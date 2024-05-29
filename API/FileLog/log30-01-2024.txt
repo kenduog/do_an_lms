@@ -1,0 +1,8 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_grade    30/01/2024 10:04
+HTTPCode: 500    MessageError: userName: dev ** Erro:The instance of entity type 'tbl_FeeInGrade' cannot be tracked because another instance with the key value '{id: c39624ce-0fca-400e-d454-08dc2140219f}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.    30/01/2024 10:06
+HTTPCode: 500    MessageError: userName: dev ** Erro:The instance of entity type 'tbl_FeeInGrade' cannot be tracked because another instance with the key value '{id: c39624ce-0fca-400e-d454-08dc2140219f}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.    30/01/2024 10:06
+HTTPCode: 500    MessageError: userName: dev ** Erro:The instance of entity type 'tbl_FeeInGrade' cannot be tracked because another instance with the key value '{id: c39624ce-0fca-400e-d454-08dc2140219f}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.    30/01/2024 10:06
+HTTPCode: 400    MessageError: userName: dev ** Erro:req_branchId    30/01/2024 11:31
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:@studentId is not a parameter for procedure Get_CollectionSessionByParent.    30/01/2024 14:22
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:Error getting value from 'totalPage' on 'Utilities.PagedList`1[Entities.tbl_CollectionSession]'.    30/01/2024 14:28
+HTTPCode: 400    MessageError: userName: dongnguyen ** Erro:nf_CollectionSession    30/01/2024 16:23

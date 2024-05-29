@@ -1,0 +1,2 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Object reference not set to an instance of an object.    29/01/2024 14:47
+HTTPCode: 500    MessageError: userName: dev ** Erro:The instance of entity type 'tbl_CollectionSessionHeader' cannot be tracked because another instance with the key value '{id: d2632a4a-ab1c-4e34-a9a6-08dc20a54d44}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.    29/01/2024 17:55

@@ -1,0 +1,4 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error getting value from 'totalPage' on 'Utilities.PagedList`1[Entities.tbl_ValueEntry]'.    10/01/2024 14:22
+HTTPCode: 400    MessageError: userName: dev ** Erro:cp_date    10/01/2024 14:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:The process cannot access the file 'D:\Mona dev\NextGen\API\Template\Export\Export_ValueEntry.xlsx' because it is being used by another process.    10/01/2024 15:16
+HTTPCode: 500    MessageError: userName: dev ** Erro:Object reference not set to an instance of an object.    10/01/2024 15:34

@@ -1,0 +1,1994 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entities</name>
+    </assembly>
+    <members>
+        <member name="P:Entities.AuthEntities.tbl_ContentType.name">
+            <summary>
+            Tên màn hình
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_ContentType.code">
+            <summary>
+            controller
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_ContentType.isRoot">
+            <summary>
+            Menu gốc
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_ContentType.parentId">
+            <summary>
+            Id menu cha
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Permission.actions">
+            <summary>
+            API to call
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.refreshToken">
+            <summary>
+            Mã refresh token
+            </summary>
+        </member>
+        <member name="P:Entities.AuthEntities.tbl_Users.refreshTokenExprires">
+            <summary>
+            Thời gian sử dụng mã xác nhận token
+            </summary>
+        </member>
+        <member name="P:Entities.DataTransferObject.StudentAvailableDTO.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.pageIndex">
+            <summary>
+            Trang hiện tại
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.pageSize">
+            <summary>
+            Số lượng item trên 1 trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.searchContent">
+            <summary>
+            Nội dung tìm kiếm chung
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.orderBy">
+            <summary>
+            Không dùng
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.totalItem">
+            <summary>
+            Tổng số item phân trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.created">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.createdBy">
+            <summary>
+            Tạo bởi
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.updated">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.updatedBy">
+            <summary>
+            Người cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.deleted">
+            <summary>
+            Cờ xóa
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.TuitionConfigOption.unit">
+            <summary>
+            Đơn vị tính
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.TuitionConfigOption.description">
+            <summary>
+            mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DiscountOption.type">
+            <summary>
+            1 - Giảm tiền
+            2 - Giảm phần trăm
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DiscountOption.value">
+            <summary>
+            Giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DiscountOption.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BranchOption.type">
+            <summary>
+            1 - Mầm non
+            2 - Tiểu học
+            ...
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.FeeOption.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.studentName">
+            <summary>
+            tên học viên
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.studentCode">
+            <summary>
+            mã học viên
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.studentThumbnail">
+            <summary>
+            ảnh đại diện
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.code">
+            <summary>
+            mã bill
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.totalFinalPrice">
+            <summary>
+            Tồng tiền phải trả
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.paid">
+            <summary>
+            Đã trả
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.debt">
+            <summary>
+            Còn nợ
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.BillInDebtModel.date">
+            <summary>
+            Thời gian thu
+            </summary>
+        </member>
+        <member name="T:Entities.Model.Statistical.Statistical12MonthModel">
+            <summary>
+            dùng cho các biểu đồ show dữ liệu 12 tháng trong năm
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.StatisticalCommentModel.DifferenceQuantity">
+            <summary>
+            số lượng chênh lệch
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.StatisticalCommentModel.DifferenceValue">
+            <summary>
+            tỷ lệ chênh lệch
+            </summary>
+        </member>
+        <member name="P:Entities.Model.Statistical.StatisticalCommentModel.Status">
+            <summary>
+            1 - tăng
+            2 - giảm
+            3 - không đổi
+            </summary>
+        </member>
+        <member name="P:Entities.Search.AdminSearch.orderBy">
+            <summary>
+            1 - Thời gian giảm dần 
+            2 - Thời gian tăng dần
+            3 - Tên giảm dần 
+            4 - Tên tăng dần
+            </summary>
+        </member>
+        <member name="P:Entities.Search.AttendanceSearch.status">
+            <summary>
+            1 - Có mặt
+            2 - Có phép
+            3 - Không phép
+            </summary>
+        </member>
+        <member name="P:Entities.Search.AvailableStudentRequest.schoolYearId">
+            <summary>
+            Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.Search.AvailableStudentRequest.isNewStudent">
+            <summary>
+            Lọc ra những học viên đủ điều kiện xếp lớp
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BillSearch.studentId">
+            <summary>
+            Học viên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BillSearch.Status">
+            <summary>
+            0 - tất cả
+            1 - chưa thanh toán hết
+            2 - đã thành toán hết
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ClassSearch.orderBy">
+            <summary>
+            0 - Giảm dần
+            1 - Tăng gần
+            2 - Tên tăng dần
+            3 - Tên giảm dần
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.gradeId">
+            <summary>
+            Trường hợp thu theo khối thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.classId">
+            <summary>
+            Trường hợp thu theo lớp thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.collectionType">
+            <summary>
+            Phát sinh kỳ thu
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.startDay">
+            <summary>
+            Ngày bắt đầu phát sinh khoản thu của tháng, quí...
+            Ví dụ: startDay = 3 thì bắt đầu phát sinh vào ngày 3 hàng tháng, hoặc ngày 3 của tháng bắt đầu quí,...
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.endDay">
+            <summary>
+            Hạn chót thanh toán khoản thu. Cơ chế tương tự ngày bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.scope">
+            <summary>
+            Phạm vi thu tiền
+            1 - Lớp
+            2 - Khối
+            3 - Toàn trường
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.allowFeeReduction">
+            <summary>
+            Cho phép áp dụng miễn giảm không
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanSearch.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CollectionPlanReport.type">
+            <summary>
+            Loại thống kê
+            1 - Theo ngày (tối đa 30 ngày)
+            2 - Theo tuần (tối đa 24 tuần)
+            3 - Theo tháng 
+            4 - Theo quý
+            5 - Theo năm
+            </summary>
+        </member>
+        <member name="P:Entities.Search.AverageMoneyPerStudent.type">
+            <summary>
+            Loại thống kê
+            1 - Theo ngày (tối đa 30 ngày)
+            2 - Theo tuần (tối đa 24 tuần)
+            3 - Theo tháng 
+            4 - Theo quý
+            5 - Theo năm
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CommentInNewsSearch.newsId">
+            <summary>
+            Bài đăng -> Lấy danh sách bình luận trong bài đăng (=> replycommentid = null)
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CommentInNewsSearch.replyCommentId">
+            <summary>
+            Bình luận được trả lời -> Lấy danh sách reply trong comment (=> replycommentid != null)
+            </summary>
+        </member>
+        <member name="P:Entities.Search.CommentSearch.studentId">
+            <summary>
+            Mã học sinh - Dùng cho mobile app
+            </summary>
+        </member>
+        <member name="P:Entities.Search.FeedbackReplySearch.feedbackId">
+            <summary>
+            Lọc theo id bài phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.Search.FeedbackSearch.status">
+            <summary>
+            Lọc theo trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.Search.FeedbackSearch.createdBy">
+            <summary>
+            Lọc theo người tạo
+            </summary>
+        </member>
+        <member name="P:Entities.Search.PrivateNewSearch.classId">
+            <summary>
+            Dùng cho mobile app
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ParentSearch.orderBy">
+            <summary>
+            1 - Thời gian giảm dần 
+            2 - Thời gian tăng dần
+            3 - Tên giảm dần 
+            4 - Tên tăng dần
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ParentSearch.type">
+            <summary>
+            1 - Cha 
+            2 - Mẹ 
+            3 - Người giám hộ
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ParentSearch.branchId">
+            <summary>
+            Chinh nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ParentSearch.myBranchIds">
+            <summary>
+            Tự lọc theo chi nhánh của người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ScaleMeasureDetailSearch.studentId">
+            <summary>
+            Id của bé được chọn - Dùng cho mobile app
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ScaleMeasureSearch.studentId">
+            <summary>
+            Id của bé được chọn - Dùng cho mobile app
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StaffSearch.type">
+            <summary>
+            1 - Màn hình giáo viên
+            2 - Màn hình nhân viên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StaffSearch.branchId">
+            <summary>
+            Chinh nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StaffSearch.groupIds">
+            <summary>
+            Nhóm quyền
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StatisticalSearchV2.type">
+            <summary>
+            1 - ngày
+            2 - tuần
+            3 - tháng
+            4 - quý
+            5 - năm
+            6 - tùy chọn
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentInClassSearch.status">
+            <summary>
+            Trạng thái học sinh trong lớp
+            1 - Đang học
+            2 - Đã tốt nghiệp
+            3 - Thôi học
+            4 - Bảo lưu
+            5 - Học lại
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearch.type">
+            <summary>
+            Loại
+            1 - Đúng tuyến
+            2 - Trái tuyến
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearch.gender">
+            <summary>
+            Enum Gender
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearch.method">
+            <summary>
+            Hình thức
+            1 - Theo buổi
+            2 - Bán trú
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearchExport.type">
+            <summary>
+            Loại
+            1 - Đúng tuyến
+            2 - Trái tuyến
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearchExport.gender">
+            <summary>
+            Enum Gender
+            </summary>
+        </member>
+        <member name="P:Entities.Search.StudentSearchExport.method">
+            <summary>
+            Hình thức
+            1 - Theo buổi
+            2 - Bán trú
+            </summary>
+        </member>
+        <member name="P:Entities.Search.TranscriptSearch.type">
+            <summary>
+            1: kiểm tra miệng
+            2: kiểm tra 15 phút
+            3: kiểm tra 1 tiết
+            4: thi giữa kỳ
+            5: thi học kỳ
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.roleCodes">
+            <summary>
+            mẫu: "code,code"
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.orderBy">
+            <summary>
+            0 - Giảm dần
+            1 - Tăng gần
+            2 - Tên tăng dần
+            3 - Tên giảm dần
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Attendance.status">
+            <summary>
+            1 - Có mặt
+            2 - Vắng phép
+            3 - Vắng không phép
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.totalPrice">
+            <summary>
+            Tổng tiền
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.totalReduced">
+            <summary>
+            Tồng tiền được giảm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.totalFinalPrice">
+            <summary>
+            Tồng tiền sau khi đã trừ giảm giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.paid">
+            <summary>
+            Đã trả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.debt">
+            <summary>
+            Còn nợ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.studentId">
+            <summary>
+            Học viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.date">
+            <summary>
+            Thời gian thu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.paymentDate">
+            <summary>
+            Ngày thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Bill.status">
+            <summary>
+            1 - chưa thanh toán
+            2 - đang chờ duyệt
+            3 - chưa thanh toán hết
+            4 - đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.tuitionConfigId">
+            <summary>
+            Khoản thu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.price">
+            <summary>
+            Đơn giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.quantity">
+            <summary>
+            Số lượng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.totalPrice">
+            <summary>
+            tổng tiền trước khi giảm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.discountId">
+            <summary>
+            Mã giảm giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.discountType">
+            <summary>
+            Loại khuyến mãi tại thời điểm áp dụng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.discountValue">
+            <summary>
+            Giá trị khuyến mãi tại thời điểm áp dụng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.discountMaximumValue">
+            <summary>
+            Giá trị khuyến mãi tối đa tại thời điểm áp dụng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.reduced">
+            <summary>
+            Đơn giá giảm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.totalReduced">
+            <summary>
+            Tổng giảm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.totalFinalPrice">
+            <summary>
+            Tồng tiền sau khi đã trừ giảm giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BillDetail.note">
+            <summary>
+            ghi chú
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Branch.type">
+            <summary>
+            1 - Mầm non
+            2 - Tiểu học
+            ...
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Branch.logoInBill">
+            <summary>
+            thông tin logo in trên bill => cái này BE tự chọt xuống DB 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Branch.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Class.session">
+            <summary>
+            Số buổi / ngày (1 hoặc 2)
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Class.sessionType">
+            <summary>
+            1 - Sáng
+            2 - Chiều
+            3 - Tối
+            </summary>
+        </member>
+        <member name="P:Entities.ClassToPrepare.session">
+            <summary>
+            Số buổi / ngày (1 hoặc 2)
+            </summary>
+        </member>
+        <member name="P:Entities.ClassToPrepare.sessionType">
+            <summary>
+            1 - Sáng
+            2 - Chiều
+            3 - Tối
+            </summary>
+        </member>
+        <member name="P:Entities.ClassShift.period">
+            <summary>
+            tiết
+            </summary>
+        </member>
+        <member name="P:Entities.ClassShiftReriod.sTime">
+            <summary>
+            Giờ bắt đầu, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Entities.ClassShiftReriod.eTime">
+            <summary>
+            Giờ kết thúc, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ClassShift.day">
+            <summary>
+            Thứ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ClassShift.period">
+            <summary>
+            tiết
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ClassShift.sTime">
+            <summary>
+            Giờ bắt đầu, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ClassShift.eTime">
+            <summary>
+            Giờ kết thúc, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.gradeId">
+            <summary>
+            Trường hợp thu theo khối thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.classId">
+            <summary>
+            Trường hợp thu theo lớp thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.status">
+            <summary>
+            1 sắp mở
+            2 đang mở
+            3 đã đóng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.collectionType">
+            <summary>
+            Phát sinh kỳ thu
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.startDay">
+            <summary>
+            Ngày bắt đầu phát sinh khoản thu của tháng, quí...
+            Ví dụ: startDay = 3 thì bắt đầu phát sinh vào ngày 3 hàng tháng, hoặc ngày 3 của tháng bắt đầu quí,...
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.endDay">
+            <summary>
+            Hạn chót thanh toán khoản thu. Cơ chế tương tự ngày bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.scope">
+            <summary>
+            Phạm vi thu tiền
+            1 - Lớp
+            2 - Khối
+            3 - Toàn trường
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.allowFeeReduction">
+            <summary>
+            Cho phép áp dụng miễn giảm không
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlan.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionPlanDetail.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.feeReductionId">
+            <summary>
+            Miễn giảm
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.refund">
+            <summary>
+            Tiền hoàn lại theo số buổi có phép
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.daysOfAbsent">
+            <summary>
+            Số ngày vắng có phép
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.amt">
+            <summary>
+            Tổng tiền cần phải thu
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.isPaid">
+            <summary>
+            Đã thanh toán chưa
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.paymentStatus">
+            <summary>
+            Trạng thái thanh toán
+            1 - Chưa thanh toán
+            2 - Chờ duyệt
+            3 - Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionItem.paid">
+            <summary>
+            Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionFee.type">
+            <summary>
+            Loại giảm
+            1 - Giảm phần trăm
+            2 - Giảm tiền
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionFee.name">
+            <summary>
+            Nội dung giảm giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.gradeId">
+            <summary>
+            Trường hợp thu theo khối thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.classId">
+            <summary>
+            Trường hợp thu theo lớp thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.collectionType">
+            <summary>
+            Phát sinh kỳ thu
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.startDay">
+            <summary>
+            Ngày bắt đầu phát sinh khoản thu của tháng, quí...
+            Ví dụ: startDay = 3 thì bắt đầu phát sinh vào ngày 3 hàng tháng, hoặc ngày 3 của tháng bắt đầu quí,...
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.endDay">
+            <summary>
+            Hạn chót thanh toán khoản thu. Cơ chế tương tự ngày bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.scope">
+            <summary>
+            Phạm vi thu tiền
+            1 - Lớp
+            2 - Khối
+            3 - Toàn trường
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.allowFeeReduction">
+            <summary>
+            Cho phép áp dụng miễn giảm không
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.feeReductionId">
+            <summary>
+            Miễn giảm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.otherFee">
+            <summary>
+            Phí khác
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.refund">
+            <summary>
+            Tiền hoàn lại theo số buổi có phép
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.daysOfAbsent">
+            <summary>
+            Số ngày vắng có phép
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.amt">
+            <summary>
+            Tổng tiền cần phải thu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.isPaid">
+            <summary>
+            Đã thanh toán chưa
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.paymentStatus">
+            <summary>
+            Trạng thái thanh toán
+            1 - Chưa thanh toán
+            2 - Chờ duyệt
+            3 - Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.paid">
+            <summary>
+            Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CollectionSessionHeader.notificationSent">
+            <summary>
+            Số thông báo đã gửi
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.paymentStatus">
+            <summary>
+            Trạng thái thanh toán
+            1 - Chưa thanh toán
+            2 - Chờ duyệt
+            3 - Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.amt">
+            <summary>
+            Tổng tiền cần phải thu
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.isPaid">
+            <summary>
+            Đã thanh toán chưa
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.paid">
+            <summary>
+            Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.refund">
+            <summary>
+            Tiền hoàn lại theo số buổi có phép
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.daysOfAbsent">
+            <summary>
+            Số ngày vắng có phép
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobile.otherFee">
+            <summary>
+            Phí khác
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobileModel.amt">
+            <summary>
+            Tổng tiền cần phải thu
+            </summary>
+        </member>
+        <member name="P:Entities.CollectionSessionHeaderMobileModel.isPaid">
+            <summary>
+            Đã thanh toán chưa
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.studentId">
+            <summary>
+            Học sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.classId">
+            <summary>
+            Lớp học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.branchId">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.date">
+            <summary>
+            Ngày nhận xét 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.lunch">
+            <summary>
+            Buổi ăn trưa
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.afternoonSnack">
+            <summary>
+            Buổi ăn chiều nhẹ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.afternoon">
+            <summary>
+            Buổi ăn chiều 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.sleep">
+            <summary>
+            Ngủ 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.dayComment">
+            <summary>
+            Nhận xét ngày 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Comment.hygiene">
+            <summary>
+            Vệ sinh 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.title">
+            <summary>
+            Tiêu đề mẫu nhận xét
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.branchId">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.lunch">
+            <summary>
+            Buổi ăn trưa
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.afternoonSnack">
+            <summary>
+            Buổi ăn chiều nhẹ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.afternoon">
+            <summary>
+            Buổi ăn chiều 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.sleep">
+            <summary>
+            Ngủ 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentDefault.hygiene">
+            <summary>
+            Vệ sinh 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentInNews.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentInNews.userId">
+            <summary>
+            Người bình luận
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_CommentInNews.replyCommentId">
+            <summary>
+            Bình luận được trả lời
+            </summary>
+        </member>
+        <member name="T:Entities.tbl_DayOfWeek">
+            <summary>
+            active - ngày đi học trong tuần
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Discount.type">
+            <summary>
+            1 - Giảm tiền
+            2 - Giảm phần trăm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Discount.value">
+            <summary>
+            Giá trị
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Discount.maximumValue">
+            <summary>
+            Giá trị tối đa => áp dụng cho loại %
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Discount.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_DocumentNews.link">
+            <summary>
+            Link hình ảnh, video, audio, tài liệu,..
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_DocumentNews.typeCode">
+            <summary>
+            Loại đuôi file
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ExemptionOrReduction.type">
+            <summary>
+            1 - Miễn học phí
+            2 - Giảm học phí theo phần trăm
+            3 - Giảm học phí theo số tiền
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Fee.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.feedbackGroupId">
+            <summary>
+            Id nhóm phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.title">
+            <summary>
+            Tiêu đề phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.content">
+            <summary>
+            Nội dung phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.status">
+            <summary>
+            Trạng thái phản hồi
+            1 Mới gửi
+            2 Đang xử lý
+            3 Đã xong
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.priority">
+            <summary>
+            Cờ độ ưu tiên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.numberOfStars">
+            <summary>
+            Số sao
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Feedback.incognito">
+            <summary>
+            Cờ ẩn danh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FeedbackGroup.name_vi">
+            <summary>
+            Tên nhóm phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FeedbackReply.feedbackId">
+            <summary>
+            Id bài phản hồi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FeedbackReply.content">
+            <summary>
+            Nội dung nhận xét
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FeeInGrade.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FeeReductionConfig.type">
+            <summary>
+            Loại giảm
+            1 - Giảm phần trăm
+            2 - Giảm tiền
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FileRecord.schoolYearId">
+            <summary>
+            Năm học bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_FileRecord.acronym">
+            <summary>
+            từ viết tắt cho tên lớp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.studentId">
+            <summary>
+            Học sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.classId">
+            <summary>
+            Lớp học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.branchId">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.weekId">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.status">
+            <summary>
+            true: có phiếu bé ngoan
+            false: không có phiếu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.authorizedAbsence">
+            <summary>
+            Vắng phép
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GoodBehaviorCertificate.unauthorizedAbsence">
+            <summary>
+            Vắng không phép
+            </summary>
+        </member>
+        <member name="P:Entities.LearningResultByWeek.status">
+            <summary>
+            Có phiếu bé ngoan hay không
+            true: có phiếu bé ngoan
+            false: không có phiếu
+            </summary>
+        </member>
+        <member name="P:Entities.LearningResultItem.status">
+            <summary>
+            0 - Không học
+            1 - Có mặt
+            2 - Vắng phép
+            3 - Vắng không phép
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Grade.acronym">
+            <summary>
+            Từ viết tắt cho tên lớp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Grade.studentYearOld">
+            <summary>
+            Tuổi tối thiểu của học sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_GroupNews.name">
+            <summary>
+            Tên nhóm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Item.essenceRate">
+            <summary>
+            Tỷ lệ thải bỏ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Item.weightPerUnit">
+            <summary>
+            Trọng lượng (gram) / 1 đơn vị tính
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ItemOfSKU.convertQty">
+            <summary>
+            So luong quy doi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LikeInNews.newsId">
+            <summary>
+            Bài đăng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LikeInNews.commentId">
+            <summary>
+            Bình luận
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_LikeInNews.userId">
+            <summary>
+            Người đã thích
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_MenuFood.type">
+            <summary>
+            Buổi trong ngày
+            1 - Trưa
+            2 - Chiều
+            3 - Phụ chiều
+            4 - Sáng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_MenuWeek.day">
+            <summary>
+            Ngày trong tuần: 1 (CN) -> 7 (Saturday)
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Necessary.content">
+            <summary>
+            type 1 - Hình thức thanh toán(tbl_PaymentMethod)
+            type 2 - Mẫu(tbl_SampleConfig), mẫu các phiếu thu chi ...
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_News.title">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_News.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_News.branchIds">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.name">
+            <summary>
+            Tên cài đặt
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.notiTitle">
+            <summary>
+            Title noti 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.notiContentForParent">
+            <summary>
+            Nội dung thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.notiContentForTeacher">
+            <summary>
+            Nội dung thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.notiContentForAll">
+            <summary>
+            Nội dung thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.emailTemplateFileParent">
+            <summary>
+            Tên file template email phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.emailTemplateFileTeacher">
+            <summary>
+            Tên file template email giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.emailTemplateFileAll">
+            <summary>
+            Tên file template email tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendNotiParent">
+            <summary>
+            Gửi thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendNotiTeacher">
+            <summary>
+            Gửi thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendNotiAll">
+            <summary>
+            Gửi thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendEmailParent">
+            <summary>
+            Gửi email cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendEmailTeacher">
+            <summary>
+            Gửi email cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.isSendEmailAll">
+            <summary>
+            Gửi email cho tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.linkForParent">
+            <summary>
+            Link chi tiết của thông báo phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.linkForTeacher">
+            <summary>
+            Link chi tiết của thông báo giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.linkForAll">
+            <summary>
+            Link chi tiết của thông báo tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.deepLinkForParent">
+            <summary>
+            Link chi tiết của thông báo trên app mobile phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.deepLinkForTeacher">
+            <summary>
+            Link chi tiết của thông báo trên app mobile giáo viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NotificationConfig.deepLinkForAll">
+            <summary>
+            Link chi tiết của thông báo trên app mobile tất cả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_NutritionGroup.gradeIds">
+            <summary>
+            Khối lớp áp dụng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.type">
+            <summary>
+            1 - Cha 
+            2 - Mẹ
+            3 - Người giám hộ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.job">
+            <summary>
+            Nghề nghiệp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Parent.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentMethod.type">
+            <summary>
+            1 - chuyển khoản
+            2 - khác
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.code">
+            <summary>
+            Mã phiếu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.studentId">
+            <summary>
+            Id học viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.value">
+            <summary>
+            Số tiền
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.type">
+            <summary>
+            1 - Thu vào 
+            2 - Chi ra
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.reason">
+            <summary>
+            Lý do 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_PaymentSession.status">
+            <summary>
+            1 - chờ duyệt
+            2 - đã duyệt
+            3 - không duyệt
+            </summary>
+        </member>
+        <member name="P:Entities.PaymentSessionPagedList.totalRevenue">
+            <summary>
+            tổng doanh thu
+            </summary>
+        </member>
+        <member name="P:Entities.PaymentSessionPagedList.totalExpense">
+            <summary>
+            tổng chi phí
+            </summary>
+        </member>
+        <member name="P:Entities.PaymentSessionPagedList.totalProfit">
+            <summary>
+            tổng lợi nhuận
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Profile.type">
+            <summary>
+            1 - Chữ - Text
+            2 - Đúng/Sai - Option
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ProfileTemplate.type">
+            <summary>
+            1 - Chữ - Text
+            2 - Đúng/Sai - Option
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ScaleMeasure.type">
+            <summary>
+            1 = Toàn trường 
+            2 = Khối 
+            3 = Lớp 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ScaleMeasureDetail.bmi">
+            <summary>
+            0: Dưới 5: Dưới cân
+            1: 5 đến 85: Bình thường
+            2: 85 đến 95: Thừa cân
+            3: 95 trở lên: Béo phì
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ScaleMeasureDetail.evaluation">
+            <summary>
+            Nhận xét người dùng nhập, trường hợp không dùng kết quả BMI
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Schedule.type">
+            <summary>
+            1 - Tiết trong tkb
+            2 - Tiết học bù
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_SchoolYear.principalId">
+            <summary>
+            Hiệu trưởng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Semester.schoolYearId">
+            <summary>
+            Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Semester.semester">
+            <summary>
+            1 = Học kì 1
+            2 = Học kì 2
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Semester.weeks">
+            <summary>
+            Số tuần của học kỳ (mặc định học kỳ 1 là 18 tuần, học kỳ 2 là 17 tuần)
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.highestLevelOfEducationId">
+            <summary>
+            Trình độ học vấn
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.graduateSchool">
+            <summary>
+            trường tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.graduateTime">
+            <summary>
+            ngày tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.otherCertificate">
+            <summary>
+            văn bằng chứng chỉ khác
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.teachingExperience">
+            <summary>
+            Kinh nghiệm dạy học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.joined">
+            <summary>
+            Ngày vào làm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Staff.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.nickname">
+            <summary>
+            Biệt danh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.type">
+            <summary>
+            Loại
+            1 - Đúng tuyến
+            2 - Trái tuyến
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.ethnicity">
+            <summary>
+            Dân tộc
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.placeOfBirth">
+            <summary>
+            Nơi sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.address">
+            <summary>
+            Địa chỉ hiện tại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.hometown">
+            <summary>
+            Quê quán
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.method">
+            <summary>
+            Hình thức
+            1 - Theo buổi
+            2 - Bán trú
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.fatherId">
+            <summary>
+            Phụ huynh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.enrollmentDate">
+            <summary>
+            Ngày nhập học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.startLearningDate">
+            <summary>
+            Ngày bắt đầu học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.status">
+            <summary>
+            Tình trạng học sinh
+            1 - Mới
+            2 - Đang học
+            3 - Bảo lưu
+            4 - Đã học xong
+            5 - Bỏ học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Student.gradeId">
+            <summary>
+            Khối
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudentInAssessment.status">
+            <summary>
+            true: đạt
+            false: chưa đạt
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudentInClass.status">
+            <summary>
+            Trạng thái học sinh trong lớp
+            1 - Đang học
+            2 - Đã tốt nghiệp
+            3 - Thôi học
+            4 - Bảo lưu
+            5 - Học lại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudySession.index">
+            <summary>
+            Tiết học (từ 1 tới 12)
+            </summary>
+        </member>
+        <member name="T:Entities.tbl_StudyShift">
+            <summary>
+            Lưu từ ngày 1/1/2000
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudyShift.position">
+            <summary>
+            Số thứ tự, tương ứng tiết 1, 2, 3... trong buổi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudyShift.dayInWeek">
+            <summary>
+            Thứ trong tuần (1 -> 7) ~ (chủ nhật -> thứ 7)
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_StudyShift.type">
+            <summary>
+            Buổi học
+            1 - Sáng 
+            2 - Chiều
+            3 - Tối
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Subject.type">
+            <summary>
+            1 = Môn học bắt buộc
+            2 = Hoạt động thể chất bắt buộc
+            3 = Môn học tự chọn
+            </summary>
+        </member>
+        <member name="T:Entities.tbl_SubjectInGrade">
+            <summary>
+            Khai báo môn học cho cấp lớp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_SubjectInGrade.duration">
+            <summary>
+            Thời gian học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_SubjectInGrade.lessonInSemester1">
+            <summary>
+            SỐ tiết học kỳ 1
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_SubjectInGrade.lessonInSemester2">
+            <summary>
+            Số tiết học kỳ 2
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TeachingFrame.cps">
+            <summary>
+            Class per semester 
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TeachingFrame.cpw">
+            <summary>
+            Class per week
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Template.type">
+            <summary>
+            1 - Phiếu thu
+            2 - Phiếu chi
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TimeTableDetail.day">
+            <summary>
+            ngay hoc
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TimeTableDetail.index">
+            <summary>
+            tiet hoc
+            </summary>
+        </member>
+        <member name="P:Entities.TimeTableDetailResponse.day">
+            <summary>
+            ngay hoc
+            </summary>
+        </member>
+        <member name="P:Entities.TimeTableDetailResponse.index">
+            <summary>
+            tiet hoc
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Transcript.type">
+            <summary>
+            1: thi giữa kỳ
+            2: thi học kỳ
+            </summary>
+        </member>
+        <member name="T:Entities.tbl_TuitionConfig">
+            <summary>
+            Cấu hình khoản thu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TuitionConfig.unit">
+            <summary>
+            Đơn vị tính
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TuitionConfig.description">
+            <summary>
+            mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TypeDocumentNews.typeCode">
+            <summary>
+            Loại file: 
+            0 - Hình ảnh
+            1 - Video
+            2 - Audio
+            3 - Tài liệu (document)
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_UserJoinGroupNews.groupNewsId">
+            <summary>
+            Tên nhóm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_UserJoinGroupNews.userId">
+            <summary>
+            Thành viên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_UserJoinGroupNews.userType">
+            <summary>
+            1 - owner
+            2 - member
+            3 - admin group
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_UserJoinGroupNews.isHide">
+            <summary>
+            0 đã tham gia nhóm
+            1 đã rời nhóm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_ValueEntry.type">
+            <summary>
+            1 - Nhap kho
+            2 - Xuat kho
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.name">
+            <summary>
+            Tên tuần
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.schoolYearId">
+            <summary>
+            Năm học
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.semesterId">
+            <summary>
+            Học kỳ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.sTime">
+            <summary>
+            Bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.eTime">
+            <summary>
+            Kết thúc
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Week.weekNumber">
+            <summary>
+            Số tuần
+            </summary>
+        </member>
+    </members>
+</doc>

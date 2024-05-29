@@ -1,0 +1,16 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_Staff, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.ItemTeacherExport, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    25/02/2024 21:22
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_Staff, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.ItemTeacherExport, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    25/02/2024 21:23
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_Staff, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.ItemTeacherExport, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    25/02/2024 21:23
+HTTPCode: 400    MessageError: userName: dev ** Erro:exs_semester    25/02/2024 21:37

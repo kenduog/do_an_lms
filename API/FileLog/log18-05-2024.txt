@@ -1,0 +1,2 @@
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    18/05/2024 15:50
+HTTPCode: 500    MessageError: userName: dev ** Erro:Conversion failed when converting from a character string to uniqueidentifier.    18/05/2024 15:54

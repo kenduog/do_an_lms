@@ -1,0 +1,7 @@
+HTTPCode: 401    MessageError: Tên đăng nhập hoặc mật khẩu không chính xác    03/01/2024 10:01
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    03/01/2024 10:15
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    03/01/2024 10:29
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:Error getting value from 'endWeekName' on 'Entities.tbl_Week'.    03/01/2024 14:35
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:Value cannot be null. (Parameter 'source')    03/01/2024 16:41
+HTTPCode: 500    MessageError: userName: dongnguyen ** Erro:Value cannot be null. (Parameter 'source')    03/01/2024 16:44
+HTTPCode: 400    MessageError: userName: admin ** Erro:Thời gian vượt quá thời gian bắt đầu và kết thúc của học kỳ!    03/01/2024 16:13

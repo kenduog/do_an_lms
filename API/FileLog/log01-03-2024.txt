@@ -1,0 +1,1 @@
+HTTPCode: 500    MessageError: userName: adminmkieuhp ** Erro:Procedure or function Get_Class has too many arguments specified.    01/03/2024 15:50

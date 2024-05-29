@@ -1,0 +1,65 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:15
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:15
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:16
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:22
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:22
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:22
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:22
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:25
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:25
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    02/02/2024 09:26

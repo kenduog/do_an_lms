@@ -1,0 +1,3 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:Không tìm thấy chi nhánh    16/05/2024 13:54
+HTTPCode: 500    MessageError: userName: dev ** Erro:An error occurred while updating the entries. See the inner exception for details.    16/05/2024 13:56
+HTTPCode: 500    MessageError: userName: dev ** Erro:An error occurred while updating the entries. See the inner exception for details.    16/05/2024 13:56

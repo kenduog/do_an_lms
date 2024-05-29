@@ -1,0 +1,4 @@
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    14/03/2024 10:13
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    14/03/2024 10:13
+HTTPCode: 400    MessageError: userName: dev ** Erro:Huỳnh Ngọc Lụanf_teacherInBranch    14/03/2024 10:20
+HTTPCode: 400    MessageError: userName: dev ** Erro:Giáo viên Huỳnh Ngọc Lụa không thuộc chi nhánh Mầm Non Hạnh Phúc    14/03/2024 10:23

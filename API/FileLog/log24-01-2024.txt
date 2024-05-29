@@ -1,0 +1,5 @@
+HTTPCode: 400    MessageError: userName: Chưa login ** Erro:Mã xác nhận đã hết hạn sử dụng    24/01/2024 11:55
+HTTPCode: 400    MessageError: userName: Chưa login ** Erro:Mã xác nhận đã hết hạn sử dụng    24/01/2024 11:57
+HTTPCode: 400    MessageError: userName: Chưa login ** Erro:Mật khẩu phải có ít nhất 8 kí tự và tối đa 128 ký tự    24/01/2024 11:58
+HTTPCode: 400    MessageError: userName: Chưa login ** Erro:Mã xác nhận không chính xác    24/01/2024 11:58
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    24/01/2024 11:59

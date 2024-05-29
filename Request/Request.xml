@@ -1,0 +1,1780 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Request</name>
+    </assembly>
+    <members>
+        <member name="T:Request.Auth.ChangePassword">
+            <summary>
+            Model đổi mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.oldPassword">
+            <summary>
+            Mật khẩu cũ
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.username">
+            <summary>
+            Email hoặc Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ResetPasswordModel.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ResetPasswordModel.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordModel.newPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordModel.confirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileName">
+            <summary>
+            Tên file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.contentType">
+            <summary>
+            Loại file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileExtension">
+            <summary>
+            Đuôi file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileRandomName">
+            <summary>
+            Tên lưu trong thư mục
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileUrl">
+            <summary>
+            Link download File
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainCreate.active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.AttendanceCreate.status">
+            <summary>
+            1 - Có mặt
+            2 - Vắng phép
+            3 - Vắng không phép
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillCreate.type">
+            <summary>
+            1 - khối
+            2 - lớp
+            3 - học viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillCreate.itemIds">
+            <summary>
+            danh sách id
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillCreate.billDetails">
+            <summary>
+            danh sách khoản thu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillCreate.date">
+            <summary>
+            Thời gian thu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillCreate.Note">
+            <summary>
+            ghi chú
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillDetailModel.tuitionConfigId">
+            <summary>
+            khoản thu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillDetailModel.quantity">
+            <summary>
+            số lượng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BillDetailModel.discountId">
+            <summary>
+            giảm giá
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BranchCreate.type">
+            <summary>
+            1 - Mầm non
+            2 - Tiểu học
+            ...
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BranchCreate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassShiftCreate.period">
+            <summary>
+            tiết
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassShiftCreate.sTime">
+            <summary>
+            Giờ bắt đầu, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassShiftCreate.eTime">
+            <summary>
+            Giờ kết thúc, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="T:Request.RequestCreate.MultipleClassCreate">
+            <summary>
+            Tạo nhiều lớp cùng lúc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassItem.startWith">
+            <summary>
+            Chữ cái bắt đầu của lớp: lấy từ tbl_Grade
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassItem.increaseWith">
+            <summary>
+            1 - Tăng theo ABC
+            2 - Tăng theo /123
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassItem.firstLetter">
+            <summary>
+            Chữ cái đầu tiên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ClassItem.size">
+            <summary>
+            Số lượng học sinh mỗi lớp - Mặc định 20
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.gradeId">
+            <summary>
+            Trường hợp thu theo khối thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.classId">
+            <summary>
+            Trường hợp thu theo lớp thì mới có giá trị
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.collectionType">
+            <summary>
+            Phát sinh kỳ thu
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.startDay">
+            <summary>
+            Ngày bắt đầu phát sinh khoản thu của tháng, quí...
+            Ví dụ: startDay = 3 thì bắt đầu phát sinh vào ngày 3 hàng tháng, hoặc ngày 3 của tháng bắt đầu quí,...
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.endDay">
+            <summary>
+            Hạn chót thanh toán khoản thu. Cơ chế tương tự ngày bắt đầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.scope">
+            <summary>
+            Phạm vi thu tiền
+            1 - Lớp
+            2 - Khối
+            3 - Toàn trường
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.allowFeeReduction">
+            <summary>
+            Cho phép áp dụng miễn giảm không
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanCreate.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CollectionPlanDetailCreate.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CommentInNewsCreate.newsId">
+            <summary>
+            Bài đăng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CommentInNewsCreate.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.CommentInNewsCreate.replyCommentId">
+            <summary>
+            Bình luận được trả lời
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ContentTypeCreate.name">
+            <summary>
+            Tên màn hình
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ContentTypeCreate.code">
+            <summary>
+            controller
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ContentTypeCreate.isRoot">
+            <summary>
+            Menu gốc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ContentTypeCreate.parentId">
+            <summary>
+            Id menu cha
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.DiscountCreate.type">
+            <summary>
+            1 - Giảm tiền
+            2 - Giảm %
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.DiscountCreate.value">
+            <summary>
+            Giá trị
+            </summary>
+        </member>
+        <member name="F:Request.RequestCreate.DiscountCreate._maximumValue">
+            <summary>
+            Giá trị tối đa => áp dụng cho loại %
+            </summary>
+            
+        </member>
+        <member name="P:Request.RequestCreate.DiscountCreate.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeeCreate.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackCreate.feedbackGroupId">
+            <summary>
+            Id nhóm phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackCreate.title">
+            <summary>
+            Tiêu đề phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackCreate.content">
+            <summary>
+            Nội dung phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackGroupCreate.name_vi">
+            <summary>
+            Tên nhóm phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackReplyCreate.feedbackId">
+            <summary>
+            Id bài phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackReplyCreate.content">
+            <summary>
+            Nội dung nhận xét
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeeReductionConfigCreate.type">
+            <summary>
+            Loại giảm
+            1 - Giảm phần trăm
+            2 - Giảm tiền
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.GradeCreate.acronym">
+            <summary>
+            từ viết tắt cho tên lớp
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.GroupNewsCreate.classIds">
+            <summary>
+            Danh sách lớp
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemCreate.essenceRate">
+            <summary>
+            Tỷ lệ thải bỏ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemOfSKUCreate.convertQty">
+            <summary>
+            So luong quy doi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.LikeInNewsCreate.newsId">
+            <summary>
+            Bài đăng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.MenuFoodCreate.type">
+            <summary>
+            Buổi trong ngày
+            1 - Trưa
+            2 - Chiều
+            3 - Phụ chiều
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.MenuWeekItem.day">
+            <summary>
+            Ngày trong tuần: 1 (CN) -> 7 (Saturday)
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NewsCreate.branchIds">
+            <summary>
+            Chọn nhiều chi nhánh dạng 1,2,3
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.name">
+            <summary>
+            Tên cài đặt
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.notiTitle">
+            <summary>
+            Title noti 
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.notiContentForParent">
+            <summary>
+            Nội dung thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.notiContentForTeacher">
+            <summary>
+            Nội dung thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.notiContentForAll">
+            <summary>
+            Nội dung thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.emailTemplateFileParent">
+            <summary>
+            Tên file template email phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.emailTemplateFileTeacher">
+            <summary>
+            Tên file template email giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.emailTemplateFileAll">
+            <summary>
+            Tên file template email tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendNotiParent">
+            <summary>
+            Gửi thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendNotiTeacher">
+            <summary>
+            Gửi thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendNotiAll">
+            <summary>
+            Gửi thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendEmailParent">
+            <summary>
+            Gửi email cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendEmailTeacher">
+            <summary>
+            Gửi email cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.isSendEmailAll">
+            <summary>
+            Gửi email cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.linkForParent">
+            <summary>
+            Link chi tiết của thông báo phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.linkForTeacher">
+            <summary>
+            Link chi tiết của thông báo giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.linkForAll">
+            <summary>
+            Link chi tiết của thông báo tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.deepLinkForParent">
+            <summary>
+            Link chi tiết của thông báo trên app mobile phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.deepLinkForTeacher">
+            <summary>
+            Link chi tiết của thông báo trên app mobile giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationConfigCreate.deepLinkForAll">
+            <summary>
+            Link chi tiết của thông báo trên app mobile tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NutritionGroupCreate.gradeIds">
+            <summary>
+            Khối lớp áp dụng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.type">
+            <summary>
+            1 - Cha 
+            2 - Mẹ
+            3 - Người giám hộ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.job">
+            <summary>
+            Nghề nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ParentCreate.studentId">
+            <summary>
+            Thông tin học viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentMethodCreate.type">
+            <summary>
+            1 - chuyển khoản
+            2 - khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentSessionCreate.value">
+            <summary>
+            số tiền
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentSessionCreate.type">
+            <summary>
+            1 - Thu vào 
+            2 - Chi ra
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentSessionCreate.paymentDate">
+            <summary>
+            ngày thanh toán
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentSessionCreate.paymentMethodId">
+            <summary>
+            Vui lòng phương thức thanh toán
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentSessionCreate.reason">
+            <summary>
+            Lý do 
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.billId">
+            <summary>
+            Vui lòng chọn công nợ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.value">
+            <summary>
+            số tiền
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.type">
+            <summary>
+            1 - Thu vào 
+            2 - Chi ra
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.paymentDate">
+            <summary>
+            ngày thanh toán
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.note">
+            <summary>
+            ghi chú
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PaymentsRequest.paymentMethodId">
+            <summary>
+            Vui lòng phương thức thanh toán
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.PermissionCreate.actions">
+            <summary>
+            API to call
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ScaleMeasureCreate.type">
+            <summary>
+            1 = Toàn trường (toàn bộ lớp của trường)
+            2 = Khối (Chọn các lớp của khối)
+            3 = Lớp (Chọn 1 lớp duy nhất)
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ScheduleCreate.type">
+            <summary>
+            1 - Tiết trong tkb
+            2 - Tiết học bù
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.highestLevelOfEducationId">
+            <summary>
+            Trình độ học vấn
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.graduateSchool">
+            <summary>
+            trường tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.graduateTime">
+            <summary>
+            ngày tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.otherCertificate">
+            <summary>
+            văn bằng chứng chỉ khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.teachingExperience">
+            <summary>
+            Kinh nghiệm dạy học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StaffCreate.joined">
+            <summary>
+            Ngày vào làm
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.nickname">
+            <summary>
+            Biệt danh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.type">
+            <summary>
+            Loại
+            1 - Đúng tuyến
+            2 - Trái tuyến
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.ethnicity">
+            <summary>
+            Dân tộc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.placeOfBirth">
+            <summary>
+            Nơi sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.address">
+            <summary>
+            Địa chỉ hiện tại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.hometown">
+            <summary>
+            Quê quán
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.method">
+            <summary>
+            Hình thức
+            1 - Theo buổi
+            2 - Bán trú
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.enrollmentDate">
+            <summary>
+            Ngày nhập học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.startLearningDate">
+            <summary>
+            Ngày bắt đầu học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentCreate.status">
+            <summary>
+            Tình trạng học sinh
+            1 - Mới
+            2 - Đang học
+            3 - Bảo lưu
+            4 - Đã học xong
+            5 - Bỏ học
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudentInClassCreate.status">
+            <summary>
+            Trạng thái học sinh trong lớp
+            1 - Đang học
+            2 - Đã tốt nghiệp
+            3 - Thôi học
+            4 - Bảo lưu
+            5 - Học lại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudySessionCreate.index">
+            <summary>
+            Tiết học (từ 1 tới 12)
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudyShiftCreate.branchId">
+            <summary>
+            Chi nhánh (trường) áp dụng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudyShiftCreate.gradeIds">
+            <summary>
+            Những khối được áp dụng (bỏ tróng là áp dụng cho toàn trường (chi nhánh))
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.StudyShiftCreate.classIds">
+            <summary>
+            Những lớp được áp dụng (bỏ trống là áp dụng cho tất cả các lớp trong khối được chọn)
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemStudyShift.position">
+            <summary>
+            Số thứ tự, tương ứng tiết 1, 2, 3... trong buổi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemStudyShift.dayInWeek">
+            <summary>
+            Thứ trong tuần (1 -> 7) ~ (chủ nhật -> thứ 7)
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemStudyShift.type">
+            <summary>
+            Buổi học
+            1 - Sáng 
+            2 - Chiều
+            3 - Tối
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.SubjectCreate.type">
+            <summary>
+            1 = Môn học bắt buộc
+            2 = Hoạt động thể chất bắt buộc
+            3 = Môn học tự chọn
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemSubjectInGrade.lessonInSemester1">
+            <summary>
+            SỐ tiết học kỳ 1
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ItemSubjectInGrade.lessonInSemester2">
+            <summary>
+            Số tiết học kỳ 2
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TeachingFrameCreate.cps">
+            <summary>
+            Class per semester 
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TeachingFrameCreate.cpw">
+            <summary>
+            Class per week
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TimeTableDetailCreate.day">
+            <summary>
+            ngay hoc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TimeTableDetailCreate.index">
+            <summary>
+            tiet hoc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TuitionConfigCreate.unit">
+            <summary>
+            Đơn vị tính
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TuitionConfigCreate.description">
+            <summary>
+            mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TypeDocumentNewsCreate.typeName">
+            <summary>
+            Tên loại file
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.username">
+            <summary>
+            Tên đăng nhập
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserImport.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserJoinGroupNewsCreate.groupNewsId">
+            <summary>
+            Tên nhóm
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserJoinGroupNewsCreate.userId">
+            <summary>
+            Thành viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserJoinGroupNewsMultipleCreate.groupNewsId">
+            <summary>
+            Tên nhóm
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserJoinGroupNewsMultipleCreate.userIds">
+            <summary>
+            Thành viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackUpdate.feedbackGroupId">
+            <summary>
+            Id nhóm phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackUpdate.title">
+            <summary>
+            Tiêu đề phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackUpdate.content">
+            <summary>
+            Nội dung phản hồi
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.FeedbackVote.numberOfStars">
+            <summary>
+            Số sao
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.NotificationUpdate.type">
+            <summary>
+            Loại cập nhật
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.AdminUpdate.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.AttendanceUpdate.status">
+            <summary>
+            1 - Có mặt
+            2 - Vắng phép
+            3 - Vắng không phép
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BillUpdate.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BranchUpdate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ChangeRoleRequest.userId">
+            <summary>
+            Người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ChangeRoleRequest.roleCode">
+            <summary>
+            Mã quyền
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ClassShiftUpdate.id">
+            <summary>
+            Tạo mới để null
+            Chỉnh sửa và xóa truyền Id cũ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ClassShiftUpdate.period">
+            <summary>
+            tiết
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ClassShiftUpdate.sTime">
+            <summary>
+            Giờ bắt đầu, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ClassShiftUpdate.eTime">
+            <summary>
+            Giờ kết thúc, tính tại 01/01/1970 GMT
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.collectionType">
+            <summary>
+            Phát sinh kỳ thu
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.startDay">
+            <summary>
+            Ngày bắt đầu phát sinh khoản thu của tháng, quí...
+            Ví dụ: startDay = 3 thì bắt đầu phát sinh vào ngày 3 hàng tháng, hoặc ngày 3 của tháng bắt đầu quí,...
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.endDay">
+            <summary>
+            Hạn chót thanh toán khoản thu. Cơ chế tương tự ngày bắt đầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.scope">
+            <summary>
+            Phạm vi thu tiền
+            1 - Lớp
+            2 - Khối
+            3 - Toàn trường
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.allowFeeReduction">
+            <summary>
+            Cho phép áp dụng miễn giảm không
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanUpdate.condition">
+            <summary>
+            Tính chất khoản thu
+            1 - Bắt buộc
+            2 - Tự nguyện
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionPlanDetailUpdate.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionSessionHeaderUpdate.feeReductionId">
+            <summary>
+            Miễn giảm
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionSessionHeaderUpdate.refund">
+            <summary>
+            Tiền hoàn lại theo số buổi có phép
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionSessionHeaderUpdate.daysOfAbsent">
+            <summary>
+            Số ngày vắng có phép
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionSessionHeaderUpdate.isPaid">
+            <summary>
+            Đã thanh toán chưa
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CollectionSessionHeaderUpdate.paid">
+            <summary>
+            Đã thanh toán
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.CommentInNewsUpdate.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ContentTypeUpdate.name">
+            <summary>
+            Tên màn hình
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ContentTypeUpdate.code">
+            <summary>
+            controller
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ContentTypeUpdate.isRoot">
+            <summary>
+            Menu gốc
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ContentTypeUpdate.parentId">
+            <summary>
+            Id menu cha
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.DeliveryOrderHeaderStatusUpdate.statusCode">
+            <summary>
+            LookupConstant.TrangThai_xxx
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.DiscountUpdate.type">
+            <summary>
+            1 - Giảm tiền
+            2 - Giảm %
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.DiscountUpdate.value">
+            <summary>
+            Giá trị
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.DiscountUpdate.maximumValue">
+            <summary>
+            Giá trị tối đa => áp dụng cho loại %
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.DiscountUpdate.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.FeeReductionConfigUpdate.type">
+            <summary>
+            Loại giảm
+            1 - Giảm phần trăm
+            2 - Giảm tiền
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.FeeUpdate.collectionType">
+            <summary>
+            Kỳ thu:
+            1 - Hàng tháng
+            2 - Quí
+            3 - Học kỳ
+            4 - Năm học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.GradeUpdate.acronym">
+            <summary>
+            từ viết tắt cho tên lớp
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.GroupFeedbackUpdate.name">
+            <summary>
+            Tên nhóm
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.GroupFeedbackUpdate.code">
+            <summary>
+            Mã
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ItemOfSKUUpdate.convertQty">
+            <summary>
+            So luong quy doi
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ItemUpdate.essenceRate">
+            <summary>
+            Tỷ lệ thải bỏ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.MenuWeekItemUpdate.day">
+            <summary>
+            Ngày trong tuần: 1 (CN) -> 7 (Saturday)
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NewsUpdate.title">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NewsUpdate.content">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.name">
+            <summary>
+            Tên cài đặt
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.notiTitle">
+            <summary>
+            Title noti 
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.notiContentForParent">
+            <summary>
+            Nội dung thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.notiContentForTeacher">
+            <summary>
+            Nội dung thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.notiContentForAll">
+            <summary>
+            Nội dung thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.emailTemplateFileParent">
+            <summary>
+            Tên file template email phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.emailTemplateFileTeacher">
+            <summary>
+            Tên file template email giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.emailTemplateFileAll">
+            <summary>
+            Tên file template email tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendNotiParent">
+            <summary>
+            Gửi thông báo cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendNotiTeacher">
+            <summary>
+            Gửi thông báo cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendNotiAll">
+            <summary>
+            Gửi thông báo cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendEmailParent">
+            <summary>
+            Gửi email cho phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendEmailTeacher">
+            <summary>
+            Gửi email cho giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.isSendEmailAll">
+            <summary>
+            Gửi email cho tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.linkForParent">
+            <summary>
+            Link chi tiết của thông báo phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.linkForTeacher">
+            <summary>
+            Link chi tiết của thông báo giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.linkForAll">
+            <summary>
+            Link chi tiết của thông báo tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.deepLinkForParent">
+            <summary>
+            Link chi tiết của thông báo trên app mobile phụ huynh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.deepLinkForTeacher">
+            <summary>
+            Link chi tiết của thông báo trên app mobile giáo viên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationConfigUpdate.deepLinkForAll">
+            <summary>
+            Link chi tiết của thông báo trên app mobile tất cả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NutritionGroupUpdate.gradeIds">
+            <summary>
+            Khối lớp áp dụng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.type">
+            <summary>
+            1 - Cha 
+            2 - Mẹ
+            3 - Người giám hộ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentInfo.job">
+            <summary>
+            Nghề nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.branchIds">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.type">
+            <summary>
+            1 - Cha 
+            2 - Mẹ
+            3 - Người giám hộ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ParentUpdate.job">
+            <summary>
+            Nghề nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.PaymentSessionUpdate.reason">
+            <summary>
+            Lý do 
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.PaymentSessionUpdate.status">
+            <summary>
+            1 - Chờ duyệt 
+            2 - Đã duyệt
+            3 - Không duyệt
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.PermissionUpdate.actions">
+            <summary>
+            API to call
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ReceiveOrderHeaderStatusUpdate.statusCode">
+            <summary>
+            LookupConstant.TrangThai_xxx
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Request.RequestUpdate.RoleUpdate.code" -->
+        <member name="P:Request.RequestUpdate.ScheduleUpdate.type">
+            <summary>
+            1 - Tiết trong tkb
+            2 - Tiết học bù
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.gender">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.branchIds">
+            <summary>
+            Chi nhánh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.highestLevelOfEducationId">
+            <summary>
+            Trình độ học vấn
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.graduateSchool">
+            <summary>
+            trường tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.graduateTime">
+            <summary>
+            ngày tốt nghiệp
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.otherCertificate">
+            <summary>
+            văn bằng chứng chỉ khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.teachingExperience">
+            <summary>
+            Kinh nghiệm dạy học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StaffUpdate.joined">
+            <summary>
+            Ngày vào làm
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentInClassUpdate.status">
+            <summary>
+            Trạng thái học sinh trong lớp
+            1 - Đang học
+            2 - Đã tốt nghiệp
+            3 - Thôi học
+            4 - Bảo lưu
+            5 - Học lại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.nickname">
+            <summary>
+            Biệt danh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.type">
+            <summary>
+            Loại
+            1 - Đúng tuyến
+            2 - Trái tuyến
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.gender">
+            <summary>
+            1 - Nam 
+            2 - Nữ 
+            3 - Khác
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.ethnicity">
+            <summary>
+            Dân tộc
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.placeOfBirth">
+            <summary>
+            Nơi sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.address">
+            <summary>
+            Địa chỉ hiện tại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.hometown">
+            <summary>
+            Quê quán
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.method">
+            <summary>
+            Hình thức
+            1 - Theo buổi
+            2 - Bán trú
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.enrollmentDate">
+            <summary>
+            Ngày nhập học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.startLearningDate">
+            <summary>
+            Ngày bắt đầu học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.StudentUpdate.status">
+            <summary>
+            Tình trạng học sinh
+            1 - Mới
+            2 - Đang học
+            3 - Bảo lưu
+            4 - Đã học xong
+            5 - Bỏ học
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.SubjectInGradeUpdate.lessonInSemester1">
+            <summary>
+            SỐ tiết học kỳ 1
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.SubjectInGradeUpdate.lessonInSemester2">
+            <summary>
+            Số tiết học kỳ 2
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.SubjectUpdate.type">
+            <summary>
+            1 = Môn học bắt buộc
+            2 = Hoạt động thể chất bắt buộc
+            3 = Môn học tăng cường
+            4 = Môn học tự chọn
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TeachingFrameUpdate.cps">
+            <summary>
+            Class per semester 
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TeachingFrameUpdate.cpw">
+            <summary>
+            Class per week
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TranscriptUpdate.note">
+            <summary>
+            1: thi giữa kỳ
+            2: thi học kỳ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TuitionConfigUpdate.unit">
+            <summary>
+            Đơn vị tính
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TuitionConfigUpdate.description">
+            <summary>
+            mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TypeDocumentNewsUpdate.typeName">
+            <summary>
+            Tên loại file
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.fullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.gender">
+            <summary>
+            </summary>
+        </member>
+    </members>
+</doc>

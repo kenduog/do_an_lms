@@ -1,0 +1,61 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    01/02/2024 15:00
+HTTPCode: 500    MessageError: userName: dev ** Erro:The instance of entity type 'tbl_MenuWeek' cannot be tracked because another instance with the key value '{id: ae1efd4c-f274-42dc-9cb1-08dc22fdad24}' is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached.    01/02/2024 15:13
+HTTPCode: 500    MessageError: userName: dev ** Erro:A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.    01/02/2024 15:21
+HTTPCode: 500    MessageError: userName: dev ** Erro:A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.    01/02/2024 15:25
+HTTPCode: 500    MessageError: userName: dev ** Erro:A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.    01/02/2024 15:25
+HTTPCode: 500    MessageError: userName: dev ** Erro:A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.    01/02/2024 15:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:04
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:04
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:04
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:04
+HTTPCode: 500    MessageError: userName: dev ** Erro:Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Entities.tbl_CollectionSessionHeader, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Entities.CollectionSessionItem, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]    01/02/2024 18:04

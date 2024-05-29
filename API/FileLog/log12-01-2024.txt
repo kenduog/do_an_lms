@@ -1,0 +1,11 @@
+HTTPCode: 400    MessageError: userName: admin ** Erro:nf_item    12/01/2024 09:36
+HTTPCode: 400    MessageError: userName: admin ** Erro:nf_item    12/01/2024 09:36
+HTTPCode: 500    MessageError: userName: admin ** Erro:Object of type 'System.Double' cannot be converted to type 'System.Int32'.    12/01/2024 10:30
+HTTPCode: 500    MessageError: userName: admin ** Erro:Object of type 'System.Double' cannot be converted to type 'System.Int32'.    12/01/2024 10:31
+HTTPCode: 500    MessageError: userName: admin ** Erro:Object of type 'System.Double' cannot be converted to type 'System.Int32'.    12/01/2024 10:32
+HTTPCode: 500    MessageError: userName: admin ** Erro:Object of type 'System.Double' cannot be converted to type 'System.Int32'.    12/01/2024 10:32
+HTTPCode: 400    MessageError: userName: dev ** Erro:JsonToken EndArray is not valid for closing JsonType Object. Path '', line 6, position 5.    12/01/2024 11:35
+HTTPCode: 400    MessageError: userName: dev ** Erro:JsonToken EndArray is not valid for closing JsonType Object. Path '', line 6, position 5.    12/01/2024 11:36
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    12/01/2024 13:50
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    12/01/2024 13:53
+HTTPCode: 500    MessageError: userName: dev ** Erro:BeginExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.    12/01/2024 13:54

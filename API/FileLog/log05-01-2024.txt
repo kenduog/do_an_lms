@@ -1,0 +1,10 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_branch    05/01/2024 10:56
+HTTPCode: 500    MessageError: userName: dev ** Erro:Invalid object name 'tbl_Vendor'.    05/01/2024 10:57
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_vendor    05/01/2024 11:00
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_item    05/01/2024 11:02
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_item    05/01/2024 11:04
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_item    05/01/2024 11:06
+HTTPCode: 500    MessageError: userName: dev ** Erro:ExecuteReader: CommandText property has not been initialized    05/01/2024 11:26
+HTTPCode: 500    MessageError: userName: dev ** Erro:ExecuteReader: CommandText property has not been initialized    05/01/2024 11:31
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_vendor    05/01/2024 11:39
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_item    05/01/2024 11:39

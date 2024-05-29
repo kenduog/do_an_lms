@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Extensions.ModelStateExtensions.GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">
+            <summary>
+            Lấy thông tin lỗi dữ liệu model
+            </summary>
+            <param name="modelState"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

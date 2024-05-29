@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.LoginAsync(Request.Auth.Login)">
+            <summary>
+            Đăng nhập hệ thống
+            </summary> 
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.LoginDevAsync(Request.Auth.LoginDev)">
+            <summary>
+            đăng nhập cho dev
+            </summary>
+            <param name="loginModel"></param>
+            <returns></returns>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:Extensions.AppException"></exception>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ChangePassword(Request.Auth.ChangePassword)">
+            <summary>
+            Đổi mật khẩu
+            </summary>
+            <param name="changePasswordModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ForgotPassword(Request.Auth.ForgotPasswordModel)">
+            <summary>
+            Quên mật khẩu
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ResetPassword(Request.Auth.ResetPasswordModel)">
+            <summary>
+            Tạo mật khẩu mới
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.Logout">
+            <summary>
+            Đăng xuất
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.UpdateOneSignalId(System.String)">
+            <summary>
+            Cập nhật id one signal cho user
+            </summary>
+            <param name="oneSignalId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.GenerateJwtToken(Entities.AuthEntities.tbl_Users)">
+            <summary>
+            Tạo token từ thông tin user
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ParentLoginAsync(Request.Auth.Login)">
+            <summary>
+            Đăng nhập hệ thống
+            </summary> 
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.GenerateMobileJwtToken(Entities.AuthEntities.tbl_Users)">
+            <summary>
+            Tạo token từ thông tin user
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileForgotPassword(Request.Auth.MobileForgotPasswordModel)">
+            <summary>
+            Quên mật khẩu
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileVerifyChangePasswordCode(Request.Auth.MobileVerifyChangePasswordModel)">
+            <summary>
+            Quên mật khẩu
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileResetPassword(Request.Auth.ChangePasswordModel)">
+            <summary>
+            Tạo mật khẩu mới
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`4.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id v1
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`4.AddItem(`1)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`4.UpdateItem(`2)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`4.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`4.Get(`3)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+HTTPCode: 500    MessageError: userName: dev ** Erro:@collectionSessionId is not a parameter for procedure Get_CollectionSessionHeader.    26/01/2024 11:42
+HTTPCode: 500    MessageError: userName: dev ** Erro:@collectionSessionId is not a parameter for procedure Get_CollectionSessionHeader.    26/01/2024 11:43
+HTTPCode: 500    MessageError: userName: dev ** Erro:Cannot create a DbSet for 'tbl_CollectionSessionFee' because this type is not included in the model for the context.    26/01/2024 11:46
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_grade    26/01/2024 13:53
+HTTPCode: 500    MessageError: userName: dev ** Erro:An exception was thrown while attempting to evaluate the LINQ query parameter expression 'value(Service.Services.StudentService+<>c__DisplayClass9_0).request.schoolYearId.Value'. See the inner exception for more information.    26/01/2024 13:54

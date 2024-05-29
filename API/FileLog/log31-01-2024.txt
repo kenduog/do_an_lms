@@ -1,0 +1,8 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:can_not_update_is_main_of_main_sku    31/01/2024 16:14
+HTTPCode: 400    MessageError: userName: dev ** Erro:can_not_update_is_main_of_main_sku    31/01/2024 16:14
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_FoodItem has too many arguments specified.    31/01/2024 17:17
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_FoodItem has too many arguments specified.    31/01/2024 17:17
+HTTPCode: 500    MessageError: userName: dev ** Erro:Procedure or function Get_FoodItem has too many arguments specified.    31/01/2024 17:17
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    31/01/2024 17:54
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    31/01/2024 17:54
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_menu    31/01/2024 17:54

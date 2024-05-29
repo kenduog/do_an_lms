@@ -1,0 +1,7 @@
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    21/05/2024 16:26
+HTTPCode: 400    MessageError: userName: dev ** Erro:Vui lòng kiểm tra định dạng ngày sinh    21/05/2024 16:30
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    21/05/2024 16:33
+HTTPCode: 401    MessageError: userName: Chưa login ** Erro:Tên đăng nhập hoặc mật khẩu không chính xác    21/05/2024 16:37
+HTTPCode: 500    MessageError: userName: dev ** Erro:String cannot be of zero length. (Parameter 'oldValue')    21/05/2024 16:38
+HTTPCode: 500    MessageError: userName: dev ** Erro:String cannot be of zero length. (Parameter 'oldValue')    21/05/2024 16:39
+HTTPCode: 500    MessageError: userName: dev ** Erro:String cannot be of zero length. (Parameter 'oldValue')    21/05/2024 16:39

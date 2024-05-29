@@ -1,0 +1,11 @@
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_branch    09/01/2024 14:57
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_vendor    09/01/2024 15:02
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_item    09/01/2024 15:03
+HTTPCode: 500    MessageError: userName: dev ** Erro:An error occurred while updating the entries. See the inner exception for details.    09/01/2024 15:11
+HTTPCode: 400    MessageError: userName: dev ** Erro:can_not_cancel_approved_bill    09/01/2024 16:50
+HTTPCode: 400    MessageError: userName: dev ** Erro:Tồn kho của `NL-0001 - Trứng gà` chỉ còn 3, không đủ để mở lại phiếu nhập kho    09/01/2024 16:51
+HTTPCode: 400    MessageError: userName: dev ** Erro:can_not_cancel_approved_bill    09/01/2024 16:59
+HTTPCode: 400    MessageError: userName: dev ** Erro:nf_receiveOrderHeader    09/01/2024 17:04
+HTTPCode: 400    MessageError: userName: dev ** Erro:Tồn kho của `NL-0001 - Trứng gà` chỉ còn , không đủ để xuất kho    09/01/2024 17:14
+HTTPCode: 400    MessageError: userName: dev ** Erro:Tồn kho của `NL-0001 - Trứng gà` chỉ còn , không đủ để mở lại phiếu nhập kho    09/01/2024 17:19
+HTTPCode: 400    MessageError: userName: dev ** Erro:invalid_action    09/01/2024 17:36
