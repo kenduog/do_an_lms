@@ -106,26 +106,6 @@ namespace API.Controllers
             }
         }
 
-        ///// <summary>
-        ///// Danh sách chi tiết đợt cân đo của trẻ
-        ///// </summary>
-        //[HttpGet]
-        //[Route("mobile-scale-measure/{studentId}")]
-        //[AppAuthorize]
-        //[Description("Chi tiết đợt cân đo của trẻ")]
-        //public async Task<AppDomainResult> GetMobileScaleMeasure(Guid studentId)
-        //{
-        //    var userLog = LoginContext.Instance.CurrentUser ?? throw new AppException(MessageContants.auth_expiried);
-        //    var parent = await this.parentService.GetSingleAsync(x => x.userId == userLog.userId) ?? throw new AppException(MessageContants.nf_parent);
-        //    var result = await scaleMeasureDetailService.GetMobileScaleMeasure(studentId);
-        //    return new AppDomainResult(new
-        //    {
-        //        items = result,
-        //        totalItem = result.Count,
-        //    });
-        //}
-
-
         [HttpGet("by-student")]
         [AppAuthorize]
         [Description("Get by student")]

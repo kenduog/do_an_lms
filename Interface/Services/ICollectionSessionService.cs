@@ -20,8 +20,6 @@ namespace Interface.Services
         Task UpdateFeeByStudent(CollectionSessionLineUpdate model);
         Task UpdateOtherFee(CollectionSessionHeaderUpdate model);
         Task<tbl_CollectionSession> CustomGetByIdAsync(CollectionSessionByIdSearch request);
-        Task<PagedList<CollectionSessionHeaderMobile>> GetByParent(CollectionSessionByParentSearch request);
-        Task<CollectionSessionHeaderMobileModel> GetCollectionHeaderByParent(Guid id);
         Task ConfirmPayment(ComfirmPayment model);
         Task SendNotification(CollectionSessionNotificationRequest request);
     }

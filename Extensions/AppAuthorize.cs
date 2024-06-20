@@ -38,7 +38,7 @@ namespace Extensions
 
             IPermissionService permissionService = (IPermissionService)context.HttpContext.RequestServices.GetService(typeof(IPermissionService));
             var hasPermit = false;
-            if (user.isSuperUser || user.isMobile)
+            if (user.isSuperUser)
             {
                 hasPermit = true;
             }

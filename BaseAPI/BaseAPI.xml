@@ -61,41 +61,6 @@
             <param name="user"></param>
             <returns></returns>
         </member>
-        <member name="M:BaseAPI.Controllers.Auth.AuthController.ParentLoginAsync(Request.Auth.Login)">
-            <summary>
-            Đăng nhập hệ thống
-            </summary> 
-            <param name="loginModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BaseAPI.Controllers.Auth.AuthController.GenerateMobileJwtToken(Entities.AuthEntities.tbl_Users)">
-            <summary>
-            Tạo token từ thông tin user
-            </summary>
-            <param name="user"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileForgotPassword(Request.Auth.MobileForgotPasswordModel)">
-            <summary>
-            Quên mật khẩu
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileVerifyChangePasswordCode(Request.Auth.MobileVerifyChangePasswordModel)">
-            <summary>
-            Quên mật khẩu
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileResetPassword(Request.Auth.ChangePasswordModel)">
-            <summary>
-            Tạo mật khẩu mới
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
         <member name="M:BaseAPI.Controllers.BaseController`4.GetById(System.Guid)">
             <summary>
             Lấy thông tin theo id v1

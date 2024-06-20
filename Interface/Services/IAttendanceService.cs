@@ -15,7 +15,6 @@ namespace Interface.Services
     {
         Task<AttendanceResponse> GetOrGenerateAttendance(AttendanceSearch request);
         Task SendNotification(AttendanceNotificationRequest request);
-        Task SendNotificationMobile(tbl_Class _class, tbl_Student student, int status);
         Task GenerateAttendance(tbl_Class _class, Guid studentId);
     }
 }

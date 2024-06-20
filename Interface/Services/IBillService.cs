@@ -15,7 +15,6 @@ namespace Interface.Services
     public interface IBillService : IDomainService<tbl_Bill, BillSearch>
     {
         Task Payment(PaymentsRequest itemModel);
-        Task MobilePayment(PaymentsRequest itemModel);
         Task<PagedList<tbl_BillDetail>> GetDetail(BillDetailSearch itemModel);
         Task<PagedList<tbl_PaymentSession>> GetPaymentSession(PaymentSessionSearch itemModel);
         Task<List<ClassByGradeModel>> GetClassByGrade(ClassInBillSearch request);

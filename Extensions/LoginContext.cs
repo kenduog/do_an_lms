@@ -75,6 +75,5 @@ namespace Extensions
         public List<GroupOption> groups { get; set; }
         public List<string> branchIds { get; set; }
         public Guid? branchId { get; set; }
-        public bool isMobile { get; set; } = false;
     }
 }

@@ -16,7 +16,7 @@ namespace Entities.Search
         [Required(ErrorMessage = "Vui lòng chọn ngày nhận xét")]
         public double? date { get; set; }
         /// <summary>
-        /// Mã học sinh - Dùng cho mobile app
+        /// Mã học sinh
         /// </summary>
         public Guid? studentId { get; set; }
     }

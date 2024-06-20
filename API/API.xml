@@ -184,18 +184,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:API.Controllers.CollectionSessionController.GetByParent(Entities.Search.CollectionSessionByParentSearch)">
-            <summary>
-            Lấy danh sách item phân trang
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.CollectionSessionController.GetCollectionHeaderByParent(System.Guid)">
-            <summary>
-            Lấy danh sách item phân trang
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:API.Controllers.CollectionSessionController.ConfirmPayment(Request.RequestUpdate.ComfirmPayment)">
             <summary>
             Confirm thanh toán
@@ -748,12 +736,6 @@
         <member name="M:API.Controllers.StudentController.GetByParent">
             <summary>
             Lấy danh sách trẻ theo phụ huynh
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.StudentController.GetProfileForMobile">
-            <summary>
-            Thông tin hồ sơ trẻ cho app
             </summary>
             <returns></returns>
         </member>

@@ -45,8 +45,6 @@ namespace Service.Services
             if (model.id == Guid.Empty) //validate người tạo
             {
                 var userLogin = LoginContext.Instance.CurrentUser ?? throw new AppException(MessageContants.auth_expiried);
-                if (!userLogin.isMobile)
-                    throw new AppException(MessageContants.unauthorized);
             }
             
         }
@@ -54,8 +52,6 @@ namespace Service.Services
         {
             FeedbackPagedList  pagedList = new FeedbackPagedList();
             var userLog = LoginContext.Instance.CurrentUser ?? throw new AppException(MessageContants.auth_expiried);
-            if (userLog.isMobile)
-                baseSearch.createdBy = userLog.userId;
             SqlParameter[] parameters = GetSqlParameters(baseSearch);
             pagedList = await ExcuteQueryWithStatusPagingAsync(this.GetStoreProcName(), parameters);
             pagedList.pageIndex = baseSearch.pageIndex;

@@ -12,10 +12,4 @@ namespace Request.Auth
         [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
         public string username { get; set; }
     }
-
-    public class MobileForgotPasswordModel
-    {
-        [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
-        public string username { get; set; }
-    }
 }

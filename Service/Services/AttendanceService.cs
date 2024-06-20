@@ -278,25 +278,5 @@ namespace Service.Services
                 LookupConstant.ScreenCode_DailyActivities,
                 param);
         }
-        public async Task SendNotificationMobile(tbl_Class _class, tbl_Student student, int status)
-        {
-            List<Guid> studentIds = new List<Guid>();
-            studentIds.Add(student.id);
-            var statusName = CoreContants.GetAttendanceStatusName(status);
-            //get data parent 
-            var receivers = await this.parentService.GetParentUserByStudentId(studentIds);
-
-            List<IDictionary<string, string>> notiParamList = new List<IDictionary<string, string>>();
-            foreach (var u in receivers)
-            {
-                IDictionary<string, string> notiParam = new Dictionary<string, string>();
-                notiParam.Add("[StudentName]", student.fullName);
-                notiParam.Add("[ClassName]", _class.name);
-                notiParam.Add("[StatusName]", statusName.ToLower());
-                notiParamList.Add(notiParam);
-            }
-            sendNotificationService.SendNotification(Guid.Parse("ea66645b-49d8-40dc-06f3-08dc3c550eb5"), receivers, notiParamList, null, null, null, LookupConstant.ScreenCode_Attendance, null);
-
-        }
     }
 }

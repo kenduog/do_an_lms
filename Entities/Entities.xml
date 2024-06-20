@@ -384,7 +384,7 @@
         </member>
         <member name="P:Entities.Search.CommentSearch.studentId">
             <summary>
-            Mã học sinh - Dùng cho mobile app
+            Mã học sinh
             </summary>
         </member>
         <member name="P:Entities.Search.FeedbackReplySearch.feedbackId">
@@ -404,7 +404,7 @@
         </member>
         <member name="P:Entities.Search.PrivateNewSearch.classId">
             <summary>
-            Dùng cho mobile app
+            
             </summary>
         </member>
         <member name="P:Entities.Search.ParentSearch.orderBy">
@@ -434,12 +434,12 @@
         </member>
         <member name="P:Entities.Search.ScaleMeasureDetailSearch.studentId">
             <summary>
-            Id của bé được chọn - Dùng cho mobile app
+            Id của bé được chọn - 
             </summary>
         </member>
         <member name="P:Entities.Search.ScaleMeasureSearch.studentId">
             <summary>
-            Id của bé được chọn - Dùng cho mobile app
+            Id của bé được chọn - 
             </summary>
         </member>
         <member name="P:Entities.Search.StaffSearch.type">
@@ -946,61 +946,6 @@
         <member name="P:Entities.tbl_CollectionSessionHeader.notificationSent">
             <summary>
             Số thông báo đã gửi
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.paymentStatus">
-            <summary>
-            Trạng thái thanh toán
-            1 - Chưa thanh toán
-            2 - Chờ duyệt
-            3 - Đã thanh toán
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.condition">
-            <summary>
-            Tính chất khoản thu
-            1 - Bắt buộc
-            2 - Tự nguyện
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.amt">
-            <summary>
-            Tổng tiền cần phải thu
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.isPaid">
-            <summary>
-            Đã thanh toán chưa
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.paid">
-            <summary>
-            Đã thanh toán
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.refund">
-            <summary>
-            Tiền hoàn lại theo số buổi có phép
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.daysOfAbsent">
-            <summary>
-            Số ngày vắng có phép
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobile.otherFee">
-            <summary>
-            Phí khác
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobileModel.amt">
-            <summary>
-            Tổng tiền cần phải thu
-            </summary>
-        </member>
-        <member name="P:Entities.CollectionSessionHeaderMobileModel.isPaid">
-            <summary>
-            Đã thanh toán chưa
             </summary>
         </member>
         <member name="P:Entities.tbl_Comment.studentId">

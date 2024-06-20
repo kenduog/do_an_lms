@@ -242,31 +242,6 @@ namespace API.Controllers
             return new AppDomainResult(result);
         }
 
-        /// <summary>
-        /// Thông tin hồ sơ trẻ cho app
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet("mobile-profile")]
-        [AppAuthorize]
-        [Description("Thông tin hồ sơ trẻ cho app")]
-        public async Task<AppDomainResult> GetProfileForMobile()
-        {
-            var userLog = LoginContext.Instance.CurrentUser ?? throw new AppException(MessageContants.auth_expiried);
-            var parent = await this.parentService.GetSingleAsync(x => x.userId == userLog.userId) ?? throw new AppException(MessageContants.nf_parent);
-            var result = await studentService.GetProfileForMobile(parent.id);
-            return new AppDomainResult
-            {
-                resultCode = ((int)HttpStatusCode.OK),
-                resultMessage = "Thành công",
-                success = true,
-                data = new
-                {
-                    items = result,
-                    totalItem = result.Count,
-                }
-            };
-        }
-
         [HttpGet("by-grade")]
         [AppAuthorize]
         [Description("Danh sách học sinh theo khối")]
@@ -343,7 +318,7 @@ namespace API.Controllers
         public async Task<AppDomainResult> Import(IFormFile file)
         {
 
-           var list = await this.studentService.Import(file);
+            var list = await this.studentService.Import(file);
             return new AppDomainResult(list);
 
         }

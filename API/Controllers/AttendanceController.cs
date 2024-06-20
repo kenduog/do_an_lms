@@ -141,13 +141,7 @@ namespace API.Controllers
                 if (item == null)
                     throw new KeyNotFoundException(MessageContants.nf_item);
 
-                var newData = await this.domainService.UpdateItemWithResponse(item);
-                var studentAttendance = await domainService.GetByIdAsync(newData.id);
-                var _class = await classService.GetByIdAsync(studentAttendance.classId ?? Guid.Empty);
-                var student = await studentService.GetByIdAsync(studentAttendance.studentId ?? Guid.Empty);
-                if (newData != null && _class != null && student != null)
-                    if (newData.status != null)
-                        await this.attendanceService.SendNotificationMobile(_class, student, newData.status ?? 0);
+                await this.domainService.UpdateItemWithResponse(item);
             }
             return new AppDomainResult
             {

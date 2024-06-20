@@ -210,59 +210,6 @@ namespace Service.Services
                 }
             }
         }
-
-        public async Task MobilePayment(PaymentsRequest itemModel)
-        {
-            using (var tran = await appDbContext.Database.BeginTransactionAsync())
-            {
-                try
-                {
-                    var user = LoginContext.Instance.CurrentUser;
-                    var bill = await unitOfWork.Repository<tbl_Bill>().GetQueryable()
-                        .SingleOrDefaultAsync(x => x.id == itemModel.billId && x.deleted == false);
-                    if (bill == null)
-                        throw new AppException("Không tìm thấy công nợ");
-                    if (bill.debt <= 0)
-                        throw new AppException("Học viên đã thanh toán hết");
-                    if (itemModel.value <= 0)
-                        throw new AppException("Vui lòng nhập số tiền");
-                    if (itemModel.value > bill.debt)
-                        throw new AppException("Số tiền không hợp lệ");
-
-                    //lưu lại phiên thanh toán
-                    var paymentSession = new tbl_PaymentSession();
-                    paymentSession.billId = itemModel.billId;
-                    paymentSession.paymentDate = itemModel.paymentDate;
-                    paymentSession.code = await autoGenCodeConfigService.AutoGenCode(nameof(tbl_PaymentSession));
-                    paymentSession.studentId = bill.studentId;
-                    paymentSession.value = itemModel.value;
-                    paymentSession.type = itemModel.type;
-                    paymentSession.typeName = itemModel.typeName;
-                    paymentSession.note = itemModel.note;
-                    paymentSession.branchId = bill.branchId;
-                    paymentSession.active = true;
-                    paymentSession.reason = $"Thanh toán công nợ [{bill.code}]";
-                    paymentSession.paymentMethodId = itemModel.paymentMethodId;                   
-                    paymentSession.status = 1;
-                    paymentSession.statusName = tbl_PaymentSession.GetStatusName(1);
-                    await unitOfWork.Repository<tbl_PaymentSession>().CreateAsync(paymentSession);
-                    await unitOfWork.SaveAsync();
-
-                    bill.status = 2;
-                    bill.statusName = tbl_Bill.GetStatusName(2);
-                    unitOfWork.Repository<tbl_Bill>().Update(bill);
-                    await unitOfWork.SaveAsync();
-
-                    await tran.CommitAsync();                                 
-                }
-                catch (AppException e)
-                {
-                    await tran.RollbackAsync();
-                    throw e;
-                }
-            }
-        }
-
         public async Task<string> GetPrintContent(tbl_PaymentSession paymentSession, tbl_Bill bill)
         {
             string result = "";

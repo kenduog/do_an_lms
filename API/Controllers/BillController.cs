@@ -323,17 +323,6 @@ namespace API.Controllers
             return new AppDomainResult();
         }
 
-        [HttpPost("mobile-payment")]
-        [AppAuthorize]
-        [Description("Thanh toán app mobile")]
-        public async Task<AppDomainResult> MobilePayment([FromBody] PaymentsRequest itemModel)
-        {
-            if (!ModelState.IsValid)
-                throw new AppException(ModelState.GetErrorMessage());
-            await billService.MobilePayment(itemModel);
-            return new AppDomainResult();
-        }
-
         /// <summary>
         /// Thêm mới item
         /// </summary>

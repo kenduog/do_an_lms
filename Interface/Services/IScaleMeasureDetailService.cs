@@ -16,7 +16,6 @@ namespace Interface.Services
     {
         Task<string> ExportStudentList(Guid scaleMeasureId);
         Task<List<ScaleMeasureDetailExportWithClient>> Import(IFormFile excelFile);
-        Task<List<StudentScaleMeasureDetail>> GetMobileScaleMeasure(Guid parentId);
         Task<string> ExportTemplate(ScaleMeasureDetailExportSearch baseSearch);
         Task<string> Export(ScaleMeasureDetailExportSearch baseSearch);
         Task SaveList(List<ScaleMeasureDetailExport> datas, Guid? scaleMeasureId);

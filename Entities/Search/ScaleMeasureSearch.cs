@@ -15,7 +15,7 @@ namespace Entities.Search
         public Guid? branchId { get; set; }
         public Guid? schoolYearId { get; set; }
         /// <summary>
-        /// Id của bé được chọn - Dùng cho mobile app
+        /// Id của bé được chọn - 
         /// </summary>
         public Guid? studentId { get; set; }
     }

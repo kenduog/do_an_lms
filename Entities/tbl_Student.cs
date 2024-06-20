@@ -136,16 +136,6 @@ namespace Entities
         public string typeName { get; set; }
 
     }
-    public class ProfileStudentForMobile : tbl_Student
-    {
-        public ParentModel father { get; set; }
-        public ParentModel mother { get; set; }
-        public ParentModel guardian { get; set; }
-        public string nameBranch { get; set; }
-        public string phoneBranch { get; set; }
-        public string emailBranch { get; set; }
-        public string addressBranch { get; set; }
-    }
     public class SchoolReportCardModel
     {
         public Guid? studentId { get; set; }

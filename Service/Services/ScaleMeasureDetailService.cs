@@ -276,25 +276,6 @@ namespace Service.Services
             public double? weight { get; set; }
             public string evaluation { get; set; }
         }
-        public async Task<List<StudentScaleMeasureDetail>> GetMobileScaleMeasure(Guid parentId)
-        {
-            var students = this.unitOfWork.Repository<tbl_Student>().GetQueryable().Where(
-                x => (x.fatherId == parentId || x.motherId == parentId || x.guardianId == parentId) && x.deleted == false).ToList();
-            List<StudentScaleMeasureDetail> result = new List<StudentScaleMeasureDetail>();
-            if (students.Any())
-                result = students.Select(x => new StudentScaleMeasureDetail
-                {
-                    studentId = x.id,
-                    studentCode = x.code,
-                    studentFirstName = x.firstName,
-                    studentLastName = x.lastName,
-                    studentFullName = x.fullName,
-                    studentGenderName = x.genderName,
-                    studentBirthDay = x.birthday,
-                    details = Task.Run(async () => await GetScaleMeasureDetailByStudent(x.id)).Result
-                }).ToList();
-            return result;
-        }
         public async Task<List<ScaleMeasureDetailModel>> GetScaleMeasureDetailByStudent(Guid studentId)
         {
             List<ScaleMeasureDetailModel> result = new List<ScaleMeasureDetailModel>();

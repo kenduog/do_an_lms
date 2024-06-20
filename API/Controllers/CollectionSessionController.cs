@@ -125,36 +125,6 @@ namespace API.Controllers
         }
 
         /// <summary>
-        /// Lấy danh sách item phân trang
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet("by-parent")]
-        [AppAuthorize]
-        [Description("Lấy danh sách đợt thu cho phụ huynh")]
-        public async Task<AppDomainResult> GetByParent([FromQuery] CollectionSessionByParentSearch baseSearch)
-        {
-            if (!ModelState.IsValid)
-                throw new AppException(ModelState.GetErrorMessage());
-            var data = await this.collectionSessionService.GetByParent(baseSearch);
-            return new AppDomainResult(data);
-        }
-
-        /// <summary>
-        /// Lấy danh sách item phân trang
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet("collection-header-by-parent/{id}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách đợt thu cho phụ huynh")]
-        public async Task<AppDomainResult> GetCollectionHeaderByParent(Guid id)
-        {
-            if (!ModelState.IsValid)
-                throw new AppException(ModelState.GetErrorMessage());
-            var data = await this.collectionSessionService.GetCollectionHeaderByParent(id);
-            return new AppDomainResult(data);
-        }
-
-        /// <summary>
         /// Confirm thanh toán
         /// </summary>
         /// <returns></returns>

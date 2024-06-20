@@ -28,12 +28,6 @@ namespace Request.Auth
         public string confirmNewPassword { get; set; }
     }
 
-    public class MobileVerifyChangePasswordModel
-    {
-        public string username { get; set; }
-        public string key { get; set; }
-    }
-
     public class ChangePasswordModel
     {
         public string username { get; set; }

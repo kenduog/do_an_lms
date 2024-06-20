@@ -21,7 +21,7 @@ namespace Entities.Search
         public bool isAdmin { get; set; }
 
         /// <summary>
-        /// Dùng cho mobile app
+        /// 
         /// </summary>
         public Guid? classId { get; set; }
     }

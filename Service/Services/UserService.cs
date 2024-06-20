@@ -445,54 +445,6 @@ namespace Service.Services
             return result;
         }
         #region mobile function
-
-        public async Task<int> MobileForgotPassword(MobileForgotPasswordModel model)
-        {
-            string domainUrl = $"{configuration.GetSection("MySettings:DomainFE").Value}/forgot-password?key=";
-            string projectName = configuration.GetSection("MySettings:ProjectName").Value.ToString();
-            var user = await GetSingleAsync(x => x.username.ToUpper() == model.username.ToUpper() && x.deleted == false);
-            if (user == null)
-                throw new AppException("Không tìm thấy tài khoản");
-
-            Random random = new Random();
-            int code = random.Next(100000, 999999);
-            string keyForgotPassword = code.ToString();
-            user.keyForgotPassword = keyForgotPassword;
-            user.createdDateKeyForgot = Timestamp.Now();
-
-            string emailContent = "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Password Change Verification</title> <style> body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; } .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); } h2 { color: #333; } p { color: #666; } .verification-code { font-size: 24px; font-weight: bold; color: #007bff; } .expiration-time { color: #ff6347; font-style: italic; } .note { color: #777; } .footer { margin-top: 20px; color: #888; } </style></head><body> <div class=\"container\"> <h2>Xác minh thay đổi mật khẩu</h2> <p>Chào {fullName},</p> <p>Mã xác nhận thay đổi mật khẩu của bạn là:</p> <p class=\"verification-code\">{code}</p> <p class=\"expiration-time\">Mã sẽ hết hạn trong {totalSecond}.</p> <p class=\"note\">Lưu ý: Vui lòng không chia sẻ mã này với bất kỳ ai vì lý do bảo mật.</p> <div class=\"footer\"> <p>Best regards!</p> </div> </div></body></html>";
-
-            string title = "Xác minh thay đổi mật khẩu";
-            emailContent = emailContent.Replace("{fullName}", user.fullName);
-            emailContent = emailContent.Replace("{code}", keyForgotPassword);
-            emailContent = emailContent.Replace("{totalSecond}", NumberToText.ConvertSecondsToText(totalSecond));
-            var sendMail = new Thread(async () =>
-            {
-                await necessaryService.SendMail(new SendMailModel
-                {
-                    to = user.email,
-                    title = title,
-                    content = emailContent
-                });
-            });
-            sendMail.Start();
-            await UpdateAsync(user);
-            return totalSecond;
-        }
-
-        public async Task MobileVerifyChangePasswordCode(MobileVerifyChangePasswordModel model)
-        {
-            var user = await GetSingleAsync(x => x.keyForgotPassword == model.key && x.username == model.username);
-            if (user == null)
-                throw new AppException("Mã xác nhận không chính xác");
-
-            var checkTime = Timestamp.AddSeconds(user.createdDateKeyForgot ?? 0, totalSecond);
-            if (Timestamp.Now() > checkTime)
-                throw new AppException("Mã xác nhận đã hết hạn sử dụng");
-
-            //pass
-        }
-
         public async Task MobileChangePassword(ChangePasswordModel model)
         {
             var user = await GetSingleAsync(x => x.username == model.username);

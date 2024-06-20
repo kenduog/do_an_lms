@@ -18,7 +18,6 @@ namespace Interface.Services
         Task<AppDomainResult> GetStudentsForArrange(ArrangeNewClassSearch request);
         Task<PagedList<tbl_Student>> AvailableStudent(AvailableStudentRequest request);
         Task<List<StudentSelection>> GetByParent(Guid parentId);
-        Task<List<ProfileStudentForMobile>> GetProfileForMobile(Guid parentId);
         Task<PagedList<tbl_Student>> GetStudentByGrade(GetStudentByGradeRequest request);
         Task<SchoolReportCardModel> SchoolReportCard(Guid studentId);
         Task<string> Export(StudentSearchExport baseSearch);

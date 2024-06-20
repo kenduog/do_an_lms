@@ -30,9 +30,6 @@ namespace Interface.Services
         Task<(int, List<AdminDTO>)> GetAdmin(BaseSearch baseSearch);
         Task<(string, List<GroupOption>)> GetGroupByUserId(Guid userId);
 
-        Task<int> MobileForgotPassword(MobileForgotPasswordModel model);
-        Task MobileVerifyChangePasswordCode(MobileVerifyChangePasswordModel model);
-        Task MobileChangePassword(ChangePasswordModel model);
         Task<IList<tbl_Users>> GetUserForSendNoti(string branchIds, Guid? groupNewsId);
         Task<bool> CheckParent(Guid userId);
     }
