@@ -266,13 +266,6 @@
             <returns></returns>
             <exception cref="T:Extensions.AppException"></exception>
         </member>
-        <member name="M:API.Controllers.DeliveryOrderHeaderController.UpdateStatus(Request.RequestUpdate.DeliveryOrderHeaderStatusUpdate)">
-            <summary>
-            Cập nhật trạng thái phiếu nhập kho
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
         <member name="M:API.Controllers.DepartmentController.UpdateItem(Request.RequestUpdate.DepartmentUpdate)">
             <summary>
             Cập nhật thông tin item
@@ -312,12 +305,6 @@
             Đánh giá kết quả phản hồi
             </summary>
             <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.FoodItemController.GetFoodItemMenu(Entities.Search.FoodItemMenuRequest)">
-            <summary>
-            Lấy danh sách thành phần của những món ăn 
-            </summary>
             <returns></returns>
         </member>
         <member name="M:API.Controllers.GoodBehaviorCertificateController.GetOrGenerateGoodBehaviorCertificate(Entities.Search.GoodBehaviorCertificateSearch)">
@@ -368,55 +355,6 @@
             Lấy danh sách chức năng
             </summary>
             <param name="request"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.AddItem(Request.RequestCreate.GroupNewsCreate)">
-            <summary>
-            Thêm mới item
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.GetUserGroupNews(Entities.Search.UserJoinGroupNewsSearch)">
-            <summary>
-            Lấy danh sách người dùng trong nhóm/ngoài nhóm 
-            </summary>
-            <param name="baseSearch"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.GrantPermissions(Request.RequestCreate.GrantPermissionsGroupNewsCreate)">
-            <summary>
-            Cấp quyền quản trị viên cho thành viên trong nhóm
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.ChangeOwner(Request.RequestCreate.ChangeOwnerGroupNewsCreate)">
-            <summary>
-            Chuyển chủ nhóm
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.RevokePermissions(Request.RequestCreate.ChangeOwnerGroupNewsCreate)">
-            <summary>
-            Hủy cấp quyền
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.GroupNewsController.CheckAdmin(Request.RequestCreate.CheckAdminGroupNewsCreate)">
-            <summary>
-            Kiểm tra admin trong nhóm
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.ItemInventoryController.GetItemInventory(Entities.Search.ItemInventorySearch)">
-            <summary>
-            Danh sách thẻ kho theo sản phẩm
-            </summary>
-            <param name="search"></param>
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:API.Controllers.LikeInNewsController.AddItem(Request.RequestCreate.LikeInNewsCreate)" -->
@@ -563,20 +501,6 @@
         <member name="M:API.Controllers.ProfileTemplateController.ChangeIndex(Request.RequestUpdate.ChangeIndexModel)">
             <summary>
             Sắp xếp
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.PurchaseOrderHeaderController.ChangeStatus(Request.RequestUpdate.ChangeStatusPurchase)">
-            <summary>
-            Đổi trạng thái
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.ReceiveOrderHeaderController.UpdateStatus(Request.RequestUpdate.ReceiveOrderHeaderStatusUpdate)">
-            <summary>
-            Cập nhật trạng thái phiếu xuất kho
             </summary>
             <param name="itemModel"></param>
             <returns></returns>
@@ -933,41 +857,6 @@
             Xóa item
             </summary>
             <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.UserJoinGroupNewsController.JoinGroupNews(Request.RequestCreate.UserJoinGroupNewsCreate)">
-            <summary>
-            Tham gia
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.UserJoinGroupNewsController.OutGroupNews(Request.RequestCreate.UserJoinGroupNewsCreate)">
-            <summary>
-            Ra khỏi nhóm
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.UserJoinGroupNewsController.JoinGroupMultipleNews(Request.RequestCreate.UserJoinGroupNewsMultipleCreate)">
-            <summary>
-            Nhiều người ra khỏi nhóm
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.UserJoinGroupNewsController.OutGroupMultipleNews(Request.RequestCreate.UserJoinGroupNewsMultipleCreate)">
-            <summary>
-            Nhiều người tham gia
-            </summary>
-            <param name="itemModel"></param>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.ValueEntryController.GetValueEntry(Entities.Search.ValueEntrySearch)">
-            <summary>
-            Danh sách thẻ kho theo sản phẩm
-            </summary>
-            <param name="search"></param>
             <returns></returns>
         </member>
         <member name="M:API.Controllers.WeekController.GenerateWeek(Request.RequestCreate.GenerateWeekCreate)">

@@ -11,7 +11,6 @@ namespace Entities.Search
 {
     public class NewsSearch : BaseSearch
     {
-        public Guid? groupNewsId { get; set; }
         public Guid? branchId { get; set; }
     }
     public class PrivateNewSearch : NewsSearch

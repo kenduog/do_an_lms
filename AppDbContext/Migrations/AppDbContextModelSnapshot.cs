@@ -2096,38 +2096,6 @@ namespace AppDbContext.Migrations
                     b.ToTable("tbl_ExemptionOrReduction");
                 });
 
-            modelBuilder.Entity("Entities.tbl_ExpenseConfigCategory", b =>
-                {
-                    b.Property<Guid>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool?>("active")
-                        .HasColumnType("bit");
-
-                    b.Property<double?>("created")
-                        .HasColumnType("float");
-
-                    b.Property<Guid?>("createdBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool?>("deleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("updated")
-                        .HasColumnType("float");
-
-                    b.Property<Guid?>("updatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("id");
-
-                    b.ToTable("tbl_ExpenseConfigCategory");
-                });
-
             modelBuilder.Entity("Entities.tbl_Fee", b =>
                 {
                     b.Property<Guid>("id")
@@ -3312,9 +3280,6 @@ namespace AppDbContext.Migrations
                     b.Property<bool?>("deleted")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("groupNewsId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool?>("pinned")
                         .HasColumnType("bit");
 
@@ -3721,9 +3686,6 @@ namespace AppDbContext.Migrations
 
                     b.Property<bool?>("deleted")
                         .HasColumnType("bit");
-
-                    b.Property<Guid?>("expenseConfigCategoryId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("note")
                         .HasColumnType("nvarchar(max)");
@@ -4546,9 +4508,6 @@ namespace AppDbContext.Migrations
 
                     b.Property<string>("otherCertificate")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("startWorkingDate")
-                        .HasColumnType("float");
 
                     b.Property<string>("teachingExperience")
                         .HasColumnType("nvarchar(max)");

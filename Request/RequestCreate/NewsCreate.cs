@@ -12,7 +12,6 @@ namespace Request.RequestCreate
 {
     public class NewsCreate : DomainCreate
     {
-        public Guid? groupNewsId { get; set; } = null;
         public string title { get; set; }
         [Required(ErrorMessage = "Vui lòng nhập nội dung")]
         public string content { get; set; }

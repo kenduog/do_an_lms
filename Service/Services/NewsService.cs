@@ -56,7 +56,7 @@ namespace Service.Services
                  .FirstOrDefaultAsync(x => x.id == newId && x.deleted == false) ?? throw new AppException(MessageContants.nf_news);
 
             //last position
-            var lastItem = await this.unitOfWork.Repository<tbl_News>().GetQueryable().Where(x => x.deleted == false && x.pinned == true && x.groupNewsId == item.groupNewsId && x.pinnedPosition.HasValue)
+            var lastItem = await this.unitOfWork.Repository<tbl_News>().GetQueryable().Where(x => x.deleted == false && x.pinned == true && x.pinnedPosition.HasValue)
                 .OrderByDescending(x => x.pinnedPosition).FirstOrDefaultAsync();
             int lastPos = 1;
             if(lastItem != null)
@@ -155,7 +155,6 @@ namespace Service.Services
             var query = this.unitOfWork.Repository<tbl_News>().GetQueryable()
                 .Where(x => 
                 x.deleted == false 
-                && x.groupNewsId == item.groupNewsId
                 && x.id != item.id
                 );
             if (to.HasValue)

@@ -10,7 +10,6 @@ namespace Entities
 {
     public class tbl_News : DomainEntities.DomainEntities
     {
-        public Guid? groupNewsId { get; set; }
         /// <summary>
         /// Tiêu đề
         /// </summary>

@@ -103,7 +103,6 @@ namespace API.Controllers
             var privateSearch = new PrivateNewSearch
             {
                 isAdmin = false,
-                groupNewsId = baseSearch.groupNewsId,
                 orderBy = baseSearch.orderBy,
                 pageIndex = baseSearch.pageIndex,
                 pageSize = baseSearch.pageSize,
@@ -133,7 +132,6 @@ namespace API.Controllers
                             createdBy = i.createdBy,
                             deleted = i.deleted,
                             fullName = i.fullName,
-                            groupNewsId = i.groupNewsId,
                             groupName = i.groupName,
                             pinned = i.pinned,
                             pinnedPosition = i.pinnedPosition,
@@ -203,12 +201,6 @@ namespace API.Controllers
                     
                 }
             }
-            if (itemModel.groupNewsId.HasValue)
-            {
-                var hasGroup = await groupNewsService.AnyAsync(x => x.id == itemModel.groupNewsId);
-                if (!hasGroup)
-                    throw new AppException(MessageContants.nf_groupNews);
-            }
             var item = mapper.Map<tbl_News>(itemModel);
             if (item == null)
                 throw new AppException(MessageContants.nf_item);
@@ -226,10 +218,6 @@ namespace API.Controllers
                     await documentNewsService.CreateAsync(document);
                 }
             List<tbl_Users> receiverList = new List<tbl_Users>();
-            foreach (var branchId in branchIds)
-            {
-                receiverList.AddRange(await userService.GetUserForSendNoti(branchId, itemModel.groupNewsId));
-            }
             HashSet<Guid> checkDuplicateReceiver = new HashSet<Guid>();
             for (int i =0;i < receiverList.Count;)
             {
@@ -255,9 +243,6 @@ namespace API.Controllers
                 notiParamList.Add(notiParam);
             }
             string linkQuery = string.Empty;
-            if (itemModel.groupNewsId.HasValue) {
-                linkQuery = "group=" + sendNotificationService.EncodingParam( itemModel.groupNewsId.Value.ToString());
-            }
             string subLink = string.Empty;
             sendNotificationService.SendNotification(Guid.Parse("f239a311-6c8a-4d82-ffeb-08dc180db26d"), receiverList, notiParamList, null, linkQuery, null, LookupConstant.ScreenCode_News, subLink);
             return new AppDomainResult(item);
@@ -492,7 +477,6 @@ namespace API.Controllers
                 createdBy = item.createdBy,
                 deleted = item.deleted,
                 fullName = item.fullName,
-                groupNewsId = item.groupNewsId,
                 groupName = item.groupName,
                 pinned = item.pinned,
                 pinnedPosition = item.pinnedPosition,
