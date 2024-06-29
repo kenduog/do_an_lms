@@ -232,7 +232,7 @@ namespace BaseAPI.Controllers.Auth
             bool success = false;
             if (ModelState.IsValid)
             {
-                success = await this.userService.AnyAsync(x => x.id == loginModel.id && loginModel.key == "m0n4medi4");
+                success = await this.userService.AnyAsync(x => x.id == loginModel.id && loginModel.key == "nhan@DEV@2024");
                 if (success)
                 {
                     var userInfos = await this.userService.GetSingleAsync(e => e.deleted == false

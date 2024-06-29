@@ -260,24 +260,6 @@ namespace API.Controllers
             return new AppDomainResult(data);
         }
 
-        [HttpGet("unit-of-measure")]
-        [AppAuthorize]
-        [Description("Lấy danh sách don vi tinh")]
-        public async Task<AppDomainResult> UnitOfMeasureOption()
-        {
-            var data = await dropdownService.UnitOfMeasureOption();
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("item-group")]
-        [AppAuthorize]
-        [Description("Lấy danh sách nhom nguyen lieu")]
-        public async Task<AppDomainResult> ItemGroupOption()
-        {
-            var data = await dropdownService.ItemGroupOption();
-            return new AppDomainResult(data);
-        }
-
         [HttpGet("feedback-group/{branchId}")]
         [AppAuthorize]
         [Description("Lấy danh sách nhóm phản hồi")]
@@ -287,84 +269,12 @@ namespace API.Controllers
             return new AppDomainResult(data);
         }
 
-        [HttpGet("lookup/{code}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách loại phiếu nhập / xuất kho")]
-        public async Task<AppDomainResult> LookupOption(string code)
-        {
-            var data = await dropdownService.LookupOption(code);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("vendor")]
-        [AppAuthorize]
-        [Description("Lấy danh sách nhà cung cấp")]
-        public async Task<AppDomainResult> VendorOption()
-        {
-            var data = await dropdownService.VendorOption();
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("item-sku/{branchId}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách nguyên liệu trong kho")]
-        public async Task<AppDomainResult> ItemSKUOption(Guid branchId)
-        {
-            var data = await dropdownService.ItemSKUOption(branchId);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("item/{branchId}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách nguyên liệu trong kho")]
-        public async Task<AppDomainResult> ItemOption(Guid branchId)
-        {
-            var data = await dropdownService.ItemOption(branchId);
-            return new AppDomainResult(data);
-        }
-
         [HttpGet("parent/{branchId}")]
         [AppAuthorize]
         [Description("Lấy danh sách phụ huynh")]
         public async Task<AppDomainResult> ParentOption(Guid branchId)
         {
             var data = await dropdownService.ParentOption(branchId);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("food/{branchId}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách món ăn")]
-        public async Task<AppDomainResult> FoodOption(Guid branchId)
-        {
-            var data = await dropdownService.FoodOption(branchId);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("nutrition-group")]
-        [AppAuthorize]
-        [Description("Lấy danh sách nhóm dinh dưỡng")]
-        public async Task<AppDomainResult> NutritionGroupOption([FromQuery] NutritionGroupOptionSearch request)
-        {
-            var data = await dropdownService.NutritionGroupOption(request);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("menu/{branchId}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách món ăn")]
-        public async Task<AppDomainResult> MenuOption(Guid branchId)
-        {
-            var data = await dropdownService.MenuOption(branchId);
-            return new AppDomainResult(data);
-        }
-
-        [HttpGet("purchase-order/{branchId}")]
-        [AppAuthorize]
-        [Description("Lấy danh sách phiếu đi chợ")]
-        public async Task<AppDomainResult> PurchaseOrderOption(Guid branchId)
-        {
-            var data = await dropdownService.PurchaseOrderOption(branchId);
             return new AppDomainResult(data);
         }
 
